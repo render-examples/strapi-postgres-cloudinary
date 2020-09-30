@@ -5,6 +5,7 @@ services:
     plan: starter
     buildCommand: yarn install && yarn build
     startCommand: yarn start
+    healthCheckPath: /healthz
     envVars:
       - key: NODE_VERSION
         value: 12.18.4
