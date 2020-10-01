@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: strapi
+    env: node
+    plan: starter
+    buildCommand: yarn install && yarn build
+    startCommand: yarn start
+    envVars:
+      - key: NODE_VERSION
+        value: 12.18.4
+      - key: NODE_ENV
+        value: production
+      - key: CLOUDINARY_NAME
+        sync: false
+      - key: CLOUDINARY_KEY
+        sync: false
+      - key: CLOUDINARY_SECRET
+        sync: false
+      - key: DATABASE_HOST
+        fromDatabase:
+          name: strapi
+          property: host
+      - key: DATABASE_PORT
+        fromDatabase:
+          name: strapi
+          property: port
+      - key: DATABASE_USER
+        fromDatabase:
+          name: strapi
+          property: user
+      - key: DATABASE_PASSWORD
+        fromDatabase:
+          name: strapi
+          property: password
+      - key: DATABASE_NAME
+        fromDatabase:
+          name: strapi
+          property: database
+
+databases:
+  - name: strapi
+    plan: starter
