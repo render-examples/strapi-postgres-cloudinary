@@ -37,6 +37,10 @@ services:
         fromDatabase:
           name: strapi
           property: database
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_JWT_SECRET
+        generateValue: true
 
 databases:
   - name: strapi
