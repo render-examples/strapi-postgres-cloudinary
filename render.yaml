@@ -17,26 +17,10 @@ services:
         sync: false
       - key: CLOUDINARY_SECRET
         sync: false
-      - key: DATABASE_HOST
+      - key: DATABASE_URL
         fromDatabase:
           name: strapi
-          property: host
-      - key: DATABASE_PORT
-        fromDatabase:
-          name: strapi
-          property: port
-      - key: DATABASE_USER
-        fromDatabase:
-          name: strapi
-          property: user
-      - key: DATABASE_PASSWORD
-        fromDatabase:
-          name: strapi
-          property: password
-      - key: DATABASE_NAME
-        fromDatabase:
-          name: strapi
-          property: database
+          property: connectionString
       - key: JWT_SECRET
         generateValue: true
       - key: ADMIN_JWT_SECRET
