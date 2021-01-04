@@ -15,16 +15,16 @@
     "pg": "^8.3.3",
     "pg-connection-string": "^2.4.0",
     "sqlite3": "latest",
-    "strapi": "3.3.3",
-    "strapi-admin": "3.3.3",
-    "strapi-connector-bookshelf": "3.3.3",
-    "strapi-plugin-content-manager": "3.3.3",
-    "strapi-plugin-content-type-builder": "3.3.3",
-    "strapi-plugin-email": "3.3.3",
-    "strapi-plugin-upload": "3.3.3",
-    "strapi-plugin-users-permissions": "3.3.3",
-    "strapi-provider-upload-cloudinary": "3.3.3",
-    "strapi-utils": "3.3.3"
+    "strapi": "3.4.1",
+    "strapi-admin": "3.4.1",
+    "strapi-connector-bookshelf": "3.4.1",
+    "strapi-plugin-content-manager": "3.4.1",
+    "strapi-plugin-content-type-builder": "3.4.1",
+    "strapi-plugin-email": "3.4.1",
+    "strapi-plugin-upload": "3.4.1",
+    "strapi-plugin-users-permissions": "3.4.1",
+    "strapi-provider-upload-cloudinary": "3.4.1",
+    "strapi-utils": "3.4.1"
   },
   "author": {
     "name": "A Strapi developer"
