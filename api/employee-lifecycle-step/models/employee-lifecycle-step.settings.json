@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employee_lifecycle_steps",
+  "info": {
+    "name": "Employee Lifecycle Step"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name_de": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "tools": {
+      "via": "employee_lifecycle_steps",
+      "collection": "tool"
+    }
+  }
+}

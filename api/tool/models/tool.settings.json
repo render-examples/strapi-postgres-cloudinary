@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tools",
+  "info": {
+    "name": "Tool",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "founding_year": {
+      "type": "integer"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "long_description": {
+      "type": "string"
+    },
+    "gdpr": {
+      "type": "boolean"
+    },
+    "mobile_app": {
+      "type": "boolean"
+    },
+    "trial": {
+      "type": "boolean"
+    },
+    "training": {
+      "type": "boolean"
+    },
+    "customer_support": {
+      "type": "boolean"
+    },
+    "integrations": {
+      "type": "boolean"
+    },
+    "saas": {
+      "type": "boolean"
+    },
+    "on_premise": {
+      "type": "boolean"
+    },
+    "self_hosted": {
+      "type": "boolean"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "categories": {
+      "collection": "category",
+      "via": "tools",
+      "dominant": true
+    },
+    "employee_lifecycle_steps": {
+      "collection": "employee-lifecycle-step",
+      "via": "tools",
+      "dominant": true
+    }
+  }
+}

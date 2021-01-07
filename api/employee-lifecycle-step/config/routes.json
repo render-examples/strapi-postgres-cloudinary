@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/employee-lifecycle-steps",
+      "handler": "employee-lifecycle-step.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/employee-lifecycle-steps/count",
+      "handler": "employee-lifecycle-step.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/employee-lifecycle-steps/:id",
+      "handler": "employee-lifecycle-step.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/employee-lifecycle-steps",
+      "handler": "employee-lifecycle-step.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/employee-lifecycle-steps/:id",
+      "handler": "employee-lifecycle-step.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/employee-lifecycle-steps/:id",
+      "handler": "employee-lifecycle-step.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
