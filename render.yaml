@@ -10,7 +10,7 @@ services:
       - key: NODE_VERSION
         value: 12.18.4
       - key: NODE_ENV
-        value: production
+        value: staging
       - key: CLOUDINARY_NAME
         sync: false
       - key: CLOUDINARY_KEY
