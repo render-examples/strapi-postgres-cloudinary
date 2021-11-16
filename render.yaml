@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: strapi
+    name: pg-cloudinary-staging
     env: node
     plan: starter
     buildCommand: yarn install && yarn build
