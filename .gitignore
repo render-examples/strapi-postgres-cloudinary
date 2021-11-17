@@ -112,3 +112,9 @@ license.txt
 exports
 .cache
 build
+
+############################
+# Render
+############################
+
+render.yaml
