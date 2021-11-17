@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "name": "profile"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "fName": {
+      "type": "string"
+    },
+    "lName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}
