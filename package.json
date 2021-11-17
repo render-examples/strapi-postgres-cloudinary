@@ -1,40 +1,44 @@
 {
-  "name": "strapi-postgres-cloudinary",
-  "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
-  "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
-  },
-  "devDependencies": {},
-  "dependencies": {
-    "knex": "<0.20.0",
-    "pg": "^8.3.3",
-    "pg-connection-string": "^2.4.0",
-    "sqlite3": "latest",
-    "strapi": "3.4.5",
-    "strapi-admin": "3.4.5",
-    "strapi-connector-bookshelf": "3.4.5",
-    "strapi-plugin-content-manager": "3.4.5",
-    "strapi-plugin-content-type-builder": "3.4.5",
-    "strapi-plugin-email": "3.4.5",
-    "strapi-plugin-upload": "3.4.5",
-    "strapi-plugin-users-permissions": "3.4.5",
-    "strapi-provider-upload-cloudinary": "3.4.5",
-    "strapi-utils": "3.4.5"
-  },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "5dbc738b-6a52-4a78-a46c-eed70aa61c15"
-  },
-  "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+	"name": "strapi-postgres-cloudinary",
+	"private": true,
+	"version": "0.1.0",
+	"description": "A Strapi application",
+	"scripts": {
+		"develop": "strapi develop",
+		"start": "strapi start",
+		"build": "strapi build",
+		"strapi": "strapi",
+		"develop_inspect": "nodemon --inspect --trace-warnings develop-inspect.js",
+		"inspect": "concurrently \"npm run develop_inspect\" \"npm run client\""
+	},
+	"devDependencies": {
+		"prettier": "2.4.1"
+	},
+	"dependencies": {
+		"knex": "<0.20.0",
+		"pg": "^8.3.3",
+		"pg-connection-string": "^2.4.0",
+		"sqlite3": "latest",
+		"strapi": "3.6.8",
+		"strapi-admin": "3.6.8",
+		"strapi-connector-bookshelf": "3.6.8",
+		"strapi-plugin-content-manager": "3.6.8",
+		"strapi-plugin-content-type-builder": "3.6.8",
+		"strapi-plugin-email": "3.6.8",
+		"strapi-plugin-upload": "3.6.8",
+		"strapi-plugin-users-permissions": "3.6.8",
+		"strapi-provider-upload-cloudinary": "3.6.8",
+		"strapi-utils": "3.6.8"
+	},
+	"author": {
+		"name": "A Strapi developer"
+	},
+	"strapi": {
+		"uuid": "5dbc738b-6a52-4a78-a46c-eed70aa61c15"
+	},
+	"engines": {
+		"node": ">=10.0.0",
+		"npm": ">=6.0.0"
+	},
+	"license": "MIT"
 }
