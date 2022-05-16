@@ -42,6 +42,12 @@
       "type": "component",
       "repeatable": false,
       "component": "files.file-type"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "frames"
     }
   }
 }
