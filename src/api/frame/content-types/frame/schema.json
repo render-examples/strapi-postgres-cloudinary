@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "frames",
+  "info": {
+    "singularName": "frame",
+    "pluralName": "frames",
+    "displayName": "Frame",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cid": {
+      "type": "uid"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "unlockType": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "userType": {
+      "type": "string"
+    },
+    "tag": {
+      "displayName": "Tag",
+      "type": "component",
+      "repeatable": true,
+      "component": "manager.tag"
+    },
+    "svg": {
+      "type": "component",
+      "repeatable": true,
+      "component": "files.file-type"
+    },
+    "img": {
+      "type": "component",
+      "repeatable": false,
+      "component": "files.file-type"
+    }
+  }
+}

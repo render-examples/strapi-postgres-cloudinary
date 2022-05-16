@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_files_file_types",
+  "info": {
+    "displayName": "FileType",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "refName": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

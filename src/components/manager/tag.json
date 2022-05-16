@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_manager_tags",
+  "info": {
+    "displayName": "Tag",
+    "icon": "bookmark",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
