@@ -10,6 +10,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/design-system": "^1.1.0",
     "@strapi/plugin-documentation": "^4.1.11",
     "@strapi/plugin-graphql": "^4.1.11",
     "@strapi/plugin-i18n": "4.1.7",
@@ -18,7 +19,8 @@
     "@strapi/strapi": "4.1.7",
     "pg": "^8.7.0",
     "pg-connection-string": "^2.5.0",
-    "sqlite3": "latest"
+    "sqlite3": "latest",
+    "strapi-plugin-populate-deep": "^0.1.2"
   },
   "author": {
     "name": "A Strapi developer"

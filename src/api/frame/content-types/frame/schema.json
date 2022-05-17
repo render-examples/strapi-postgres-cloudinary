@@ -35,7 +35,7 @@
     },
     "svg": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "files.file-type"
     },
     "img": {
