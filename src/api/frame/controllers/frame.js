@@ -38,6 +38,6 @@ module.exports = createCoreController('api::frame.frame', ({ strapi }) => ({
                 }
             }
         }
-        return {returnData};
+        return returnData;
     }
 }));
