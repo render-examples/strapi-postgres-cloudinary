@@ -11,7 +11,7 @@ module.exports = createCoreController('api::frame.frame', ({ strapi }) => ({
 
     async find(ctx) {
         // some custom logic here
-        ctx.query = { ...ctx.query, local: 'en' }
+        ctx.query = { ...ctx.query, local: 'en', populate : 'deep' }
         
         // Calling the default core action
         const { data, meta } = await super.find(ctx);
@@ -29,15 +29,15 @@ module.exports = createCoreController('api::frame.frame', ({ strapi }) => ({
                 userType : currentData.userType,
                 tag : currentData.tag,
                 svg : {
-                    type : currentData.svg.type,
-                    refName : currentData.svg.refName.data.attributes.url
+                    type : currentData.svg?.type,
+                    refName : currentData.svg?.refName?.data?.attributes?.url
                 },
                 img : {
-                    type : currentData.img.type,
-                    refName : currentData.img.refName.data.attributes.url
+                    type : currentData.img?.type,
+                    refName : currentData.img?.refName?.data?.attributes?.url
                 }
             }
         }
-        return returnData;
+        return {returnData};
     }
 }));
