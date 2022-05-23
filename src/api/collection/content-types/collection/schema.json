@@ -15,7 +15,7 @@
     "title": {
       "type": "string"
     },
-    "Items": {
+    "items": {
       "type": "component",
       "repeatable": true,
       "component": "manager.item"
