@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_manager_items",
+  "info": {
+    "displayName": "Item",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cid": {
+      "type": "string"
+    }
+  }
+}

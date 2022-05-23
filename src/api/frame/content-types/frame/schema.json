@@ -21,9 +21,6 @@
     "unlockType": {
       "type": "string"
     },
-    "order": {
-      "type": "integer"
-    },
     "userType": {
       "type": "string"
     },

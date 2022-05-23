@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collections",
+  "info": {
+    "singularName": "collection",
+    "pluralName": "collections",
+    "displayName": "Collection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "manager.item"
+    },
+    "tag": {
+      "type": "string"
+    }
+  }
+}
