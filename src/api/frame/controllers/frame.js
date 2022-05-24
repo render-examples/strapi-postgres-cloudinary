@@ -11,7 +11,7 @@ module.exports = createCoreController('api::frame.frame', ({ strapi }) => ({
 
     async find(ctx) {
         // some custom logic here
-        ctx.query = { ...ctx.query, local: 'en', populate : 'deep' }
+        ctx.query = { ...ctx.query, local: 'en', populate : 'deep', pagination : {limit : -1} }
         
         // Calling the default core action
         const { data, meta } = await super.find(ctx);
