@@ -25,7 +25,6 @@ module.exports = createCoreController('api::frame.frame', ({ strapi }) => ({
                 id : currentData.cid,
                 active : currentData.active,
                 unlockType : currentData.unlockType,
-                order : currentData.order,
                 userType : currentData.userType,
                 tag : currentData.tag,
                 svg : {
