@@ -21,6 +21,9 @@ module.exports = createCoreController('api::frame.frame', ({ strapi }) => ({
         var index;
         for (index = 0; index < size; index++){
             var currentData = data[index].attributes
+            var defaultType = "Uri"
+            var svgUrl = currentData.svg?.refName?.data?.attributes?.url
+            var imgUrl = currentData.img?.refName?.data?.attributes?.url
             returnData[index] = {
                 id : currentData.cid,
                 active : currentData.active,
@@ -28,12 +31,12 @@ module.exports = createCoreController('api::frame.frame', ({ strapi }) => ({
                 userType : currentData.userType,
                 tag : currentData.tag,
                 svg : {
-                    type : currentData.svg?.type,
-                    refName : currentData.svg?.refName?.data?.attributes?.url
+                    type : (currentData.svg?.type == null) ? defaultType : currentData.svg?.type,
+                    refName : svgUrl == null ? "" : svgUrl
                 },
                 img : {
-                    type : currentData.img?.type,
-                    refName : currentData.img?.refName?.data?.attributes?.url
+                    type : (currentData.img?.type == null) ? defaultType : currentData.img?.type,
+                    refName : imgUrl == null ? "" : imgUrl
                 }
             }
         }
