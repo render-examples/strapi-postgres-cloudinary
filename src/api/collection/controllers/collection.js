@@ -33,7 +33,7 @@ module.exports = createCoreController('api::collection.collection', ({ strapi })
                 id : currentId,
                 title : currentData.title,
                 items : resultChildItems,
-                tag : currentData.tag
+                tag : currentData.tag == null ? "" : currentData.tag
             }
         }
         return returnData;
