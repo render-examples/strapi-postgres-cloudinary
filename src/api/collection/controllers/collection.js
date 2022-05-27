@@ -10,7 +10,7 @@ module.exports = createCoreController('api::collection.collection', ({ strapi })
 
     async find(ctx) {
         // some custom logic here
-        ctx.query = { ...ctx.query, local: 'en', populate : 'deep', pagination : {limit : -1} }
+        ctx.query = { ...ctx.query, local: 'en', populate : 'deep', pagination : {limit : -1}, sort : 'order:ASC' }
         
         // Calling the default core action
         const { data, meta } = await super.find(ctx);
@@ -32,6 +32,7 @@ module.exports = createCoreController('api::collection.collection', ({ strapi })
             returnData[index] = {
                 id : currentId,
                 title : currentData.title,
+                order : currentData.order,
                 items : resultChildItems,
                 tag : currentData.tag == null ? "" : currentData.tag
             }
