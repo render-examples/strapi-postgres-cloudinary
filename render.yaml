@@ -7,8 +7,6 @@ services:
     startCommand: yarn start
     healthCheckPath: /_health
     envVars:
-      - key: NODE_VERSION
-        value: ~16.13.0
       - key: NODE_ENV
         value: production
       - key: CLOUDINARY_NAME
@@ -22,9 +20,9 @@ services:
           name: strapi
           property: connectionString
       - key: JWT_SECRET
-        generateValue: true
+        generateValue: false
       - key: ADMIN_JWT_SECRET
-        generateValue: true
+        generateValue: false
       - key: APP_KEYS
         generateValue: true
 
