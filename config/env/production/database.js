@@ -14,6 +14,15 @@ module.exports = ({ env }) => {
         password
       },
       debug: false,
+      pool: {
+        min: 0,
+        max: 10,
+        // acquireTimeoutMillis: 2000,
+        // createTimeoutMillis: 2000,
+        // destroyTimeoutMillis: 5000,
+        // idleTimeoutMillis: 2000,
+        // reapIntervalMillis: 2000,
+      }
     },
   };
 };
