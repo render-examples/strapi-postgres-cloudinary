@@ -11,17 +11,20 @@ module.exports = ({ env }) => {
         port,
         database,
         user,
-        password
+        password,
+        ssl: {
+          rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
+        },
       },
-      debug: false,
+      debug: env.bool('DB_CLIENT_DEBUG', false),
       pool: {
         min: 0,
         max: 10,
-        // acquireTimeoutMillis: 2000,
-        // createTimeoutMillis: 2000,
-        // destroyTimeoutMillis: 5000,
-        // idleTimeoutMillis: 2000,
-        // reapIntervalMillis: 2000,
+        acquireTimeoutMillis: 2000,
+      //   createTimeoutMillis: 2000,
+      //   destroyTimeoutMillis: 5000,
+      //   idleTimeoutMillis: 2000,
+      //   reapIntervalMillis: 2000,
       }
     },
   };
