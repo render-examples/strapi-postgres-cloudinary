@@ -25,7 +25,7 @@ services:
         generateValue: false
       - key: APP_KEYS
         generateValue: true
-      - key: DATABASE_SSL_SELF
+      - key: DB_CLIENT_DEBUG
         value: false
 
 databases:
