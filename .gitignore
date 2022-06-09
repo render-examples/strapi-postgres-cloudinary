@@ -111,3 +111,4 @@ license.txt
 exports
 .cache
 build
+.env
