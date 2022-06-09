@@ -17,6 +17,7 @@ module.exports = [
   "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
+  "global::log-request",
   "strapi::query",
   "strapi::body",
   'strapi::session',
