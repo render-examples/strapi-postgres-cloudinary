@@ -29,7 +29,11 @@ services:
         value: false
       - key: LOG_LEVEL
         value: info
-
+  - type: redis
+    name: redis-thunder
+    region: oregon
+    plan: starter # optional (defaults to starter)
+    maxmemoryPolicy: allkeys-lru # optional (defaults to allkeys-lru
 databases:
   - name: strapi
     plan: starter
