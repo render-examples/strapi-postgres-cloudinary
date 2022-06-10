@@ -4,6 +4,7 @@ module.exports = {
       name: 'babystory-strapi',
       script: 'npm',
       args: 'start',
+      instances: 'max',
     },
   ],
 };

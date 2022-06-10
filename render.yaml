@@ -27,7 +27,7 @@ services:
         generateValue: true
       - key: DB_CLIENT_DEBUG
         value: false
-      - key: STRAPI_LOG_LEVEL
+      - key: LOG_LEVEL
         value: info
 
 databases:
