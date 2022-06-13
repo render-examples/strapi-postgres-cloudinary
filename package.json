@@ -17,6 +17,7 @@
     "@strapi/plugin-users-permissions": "4.1.7",
     "@strapi/provider-upload-cloudinary": "4.1.7",
     "@strapi/strapi": "4.1.7",
+    "koa-cache-lite": "^3.8.8",
     "pg": "^8.7.0",
     "pg-connection-string": "^2.5.0",
     "sqlite3": "latest",

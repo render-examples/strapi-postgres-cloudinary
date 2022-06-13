@@ -5,6 +5,7 @@ module.exports = [
   "strapi::poweredBy",
   "strapi::logger",
   "global::log-request",
+  "global::http-cache-redis",
   "strapi::query",
   "strapi::body",
   'strapi::session',

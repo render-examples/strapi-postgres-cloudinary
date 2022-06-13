@@ -7343,6 +7343,11 @@ koa-bodyparser@^4.3.0:
     co-body "^6.0.0"
     copy-to "^2.0.1"
 
+koa-cache-lite@^3.8.8:
+  version "3.8.8"
+  resolved "https://registry.yarnpkg.com/koa-cache-lite/-/koa-cache-lite-3.8.8.tgz#655b38183a2cbb1fae6d61aeb488b5063a919018"
+  integrity sha512-b2bLC92FxzRhbNYdpRzSjNJi5n25e7Q8AKkPSnuiZ02yXyha92ZNSR9LhRpOtc00NEeff4k/dMOaQ/+aJud2/Q==
+
 koa-compose@4.1.0, koa-compose@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/koa-compose/-/koa-compose-4.1.0.tgz"
