@@ -1,11 +1,11 @@
 const cache = require('koa-cache-lite');
 
-cache.configure({
-  '/api/frames': 30000,
-}, {
-  debug: true,
-});
-
-module.exports = (config) => {
+module.exports = (config, strapi) => {
+  const { cacheTTL } = config;
+  cache.configure({
+    '/api/frames': cacheTTL,
+  }, {
+    debug: true,
+  });
   return cache.middleware();
 }
