@@ -10,7 +10,7 @@ const defaultRouteConfig = {
 };
 
 module.exports = (config) => {
-  const logLevel = config?.logLevel;
+  const options = _.pickBy(config?.options || {}, _.identity);
   const routeOptions = _.pickBy(config?.routeOptions || {}, _.identity);
 
   cache.configure({
@@ -19,7 +19,8 @@ module.exports = (config) => {
       ...routeOptions,
     },
   }, {
-    debug: logLevel || false,
+    debug: false,
+    ...options,
   });
   return cache.middleware();
 };
