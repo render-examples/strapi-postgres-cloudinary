@@ -34,6 +34,7 @@ services:
     region: oregon
     plan: starter # optional (defaults to starter)
     maxmemoryPolicy: allkeys-lru # optional (defaults to allkeys-lru
+    ipAllowList: []
 databases:
   - name: strapi
     plan: starter
