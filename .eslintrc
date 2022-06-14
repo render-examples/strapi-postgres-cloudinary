@@ -1,5 +1,4 @@
 {
-  "parser": "babel-eslint",
   "extends": "eslint:recommended",
   "env": {
     "commonjs": true,
@@ -8,11 +7,12 @@
     "browser": false
   },
   "parserOptions": {
+    "ecmaVersion": 2021,
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
       "jsx": false
     },
-    "sourceType": "module"
+    "sourceType": "script"
   },
   "globals": {
     "strapi": true

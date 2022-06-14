@@ -1,5 +1,5 @@
 const path = require('path');
-const { parse } = require("pg-connection-string");
+const { parse } = require('pg-connection-string');
 
 module.exports = ({ env }) => {
   const DATABASE_URL = env('DATABASE_URL');
@@ -12,14 +12,14 @@ module.exports = ({ env }) => {
         },
         useNullAsDefault: true,
       },
-    }
+    };
   }
 
   const { host, port, database, user, password } = parse(DATABASE_URL);
 
   return {
     connection: {
-      client: "postgres",
+      client: 'postgres',
       connection: {
         host,
         port,

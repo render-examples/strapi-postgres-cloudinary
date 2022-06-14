@@ -1,11 +1,25 @@
 const cache = require('koa-cache-lite');
+const _ = require('lodash');
 
-module.exports = (config, strapi) => {
-  const { cacheTTL } = config;
+
+const defaultRouteConfig = {
+  timeout: 600000, // 10 min
+  cacheKeyArgs: {
+    query: true,
+  },
+};
+
+module.exports = (config) => {
+  const logLevel = config?.logLevel;
+  const routeOptions = _.pickBy(config?.routeOptions || {}, _.identity);
+
   cache.configure({
-    '/api/frames': cacheTTL,
+    '*': {
+      ...defaultRouteConfig,
+      ...routeOptions,
+    },
   }, {
-    debug: true,
+    debug: logLevel || false,
   });
   return cache.middleware();
-}
+};
