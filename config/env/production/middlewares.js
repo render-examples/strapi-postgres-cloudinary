@@ -22,7 +22,9 @@ module.exports = ({ env }) => {
     {
       name: 'global::http-cache-redis',
       config: {
-        debug: env('LOG_LEVEL') === 'debug',
+        options: {
+          debug: env('LOG_LEVEL') === 'debug'
+        },
       },
     },
     'strapi::query',

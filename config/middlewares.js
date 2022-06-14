@@ -6,14 +6,16 @@ module.exports = ({ env }) => {
     'strapi::poweredBy',
     'strapi::logger',
     'global::log-request',
+    'strapi::query',
+    'strapi::body',
     {
       name: 'global::http-cache-redis',
       config: {
-        debug: env('LOG_LEVEL') === 'debug',
+        options: {
+          debug: env('LOG_LEVEL') === 'debug'
+        },
       },
     },
-    'strapi::query',
-    'strapi::body',
     'strapi::session',
     'strapi::favicon',
     'strapi::public',
