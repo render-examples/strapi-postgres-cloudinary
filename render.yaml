@@ -29,6 +29,11 @@ services:
         value: false
       - key: LOG_LEVEL
         value: info
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: redis-thunder
+          property: connectionString
   - type: redis
     name: redis-thunder
     region: oregon
