@@ -2,8 +2,9 @@ module.exports = {
   apps: [
     {
       name: 'babystory-strapi',
-      script: 'npm',
+      script: 'strapi',
       args: 'start',
+      exec_mode: 'cluster',
       instances: 'max',
     },
   ],

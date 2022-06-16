@@ -4,3 +4,19 @@ services:
     image: redis:7-alpine
     ports:
       - "6379:6379"
+  strapi:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://strapi_ntdy_user:ZMpSgaszh3mhsHyTEosnBeQhjrgp92RJ@dpg-c9t4kic41ls7n7ojep2g-a.oregon-postgres.render.com:5432/strapi_ntdy
+      REDIS_URL: redis://redis:6379
+      HOST: localhost
+      LOG_LEVEL: debug
+      API_TOKEN_SALT: f928d56f7fe0432470ab25b17a83d967
+      JWT_SECRET: i9eQyxX4deOqHrZeYcALs99ME0P8YZso
+    ports:
+      - "1337:1337"
