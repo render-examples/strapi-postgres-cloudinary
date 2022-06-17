@@ -5,6 +5,12 @@ module.exports = (config, { strapi }) => {
     await next();
 
     const { response } = context;
+    const httpMethod = context.request?.method;
+
+    if (!httpMethod || httpMethod !== 'GET') {
+      return;
+    }
+
     if (!response) {
       return;
     }
