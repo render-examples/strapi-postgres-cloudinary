@@ -10,7 +10,7 @@ FROM node:14-buster-slim as Runtime
 
 # set nginx
 RUN apt update
-RUN #apt install iproute2 nginx -y
+#RUN apt install iproute2 nginx -y
 #RUN rm -R /etc/nginx/sites-enabled/*
 #COPY /nginx/site-available/* /etc/nginx/sites-enabled
 #EXPOSE 80/tcp
