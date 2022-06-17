@@ -29,4 +29,3 @@ services:
     ipAllowList: []
 databases:
   - name: strapi
-    plan: standardPlus
