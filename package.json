@@ -17,6 +17,9 @@
     "@strapi/plugin-users-permissions": "4.1.7",
     "@strapi/provider-upload-cloudinary": "4.1.7",
     "@strapi/strapi": "4.1.7",
+    "ioredis": "^5.0.6",
+    "koa-cache-lite": "^3.8.8",
+    "lodash": "^4.17.21",
     "pg": "^8.7.0",
     "pg-connection-string": "^2.5.0",
     "sqlite3": "latest",
@@ -32,5 +35,8 @@
     "node": ">=10.0.0",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.17.0"
+  }
 }

@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-const { winston } = require("@strapi/logger");
+const { winston } = require('@strapi/logger');
 
 module.exports = ({ env }) => {
   return {
@@ -10,4 +10,4 @@ module.exports = ({ env }) => {
       }),
     ],
   };
-}
+};
