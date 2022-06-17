@@ -4,7 +4,7 @@ WORKDIR /app
 COPY / /app
 ENV YARN_CACHE_FOLDER=/root/.yarn
 RUN --mount=type=cache,target=/root/.yarn yarn install --frozen-lockfile
-
+ENV PATH="/app/node_modules/.bin:${PATH}"
 
 FROM node:14-alpine as Runtime
 
@@ -24,6 +24,9 @@ ENV YARN_CACHE_FOLDER=/root/.yarn
 ENV PATH="/app/node_modules/.bin:${PATH}"
 EXPOSE 1337/tcp
 WORKDIR /app
+
+# strapi admin build
+RUN strapi build
 
 RUN --mount=type=cache,target=/root/.yarn yarn global add pm2
 
