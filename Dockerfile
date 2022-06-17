@@ -17,7 +17,7 @@ RUN #apt install iproute2 nginx -y
 
 # set application
 COPY --from=Build /app /app
-ENV NODE_ENV=dev
+ENV NODE_ENV=production
 ENV DATABASE_URL=''
 ENV API_TOKEN_SALT=''
 ENV SERVE_ADMIN_PANEL=true
