@@ -2,7 +2,7 @@ services:
   - type: web
     name: strapi
     env: docker
-    plan: starter
+    plan: pro
     healthCheckPath: /_health
     region: oregon
     envVars:
