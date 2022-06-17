@@ -1,4 +1,4 @@
-FROM node:14-buster as Build
+FROM node:14-alpine as Build
 
 WORKDIR /app
 COPY / /app
@@ -6,10 +6,10 @@ ENV YARN_CACHE_FOLDER=/root/.yarn
 RUN --mount=type=cache,target=/root/.yarn yarn install --frozen-lockfile
 
 
-FROM node:14-buster-slim as Runtime
+FROM node:14-alpine as Runtime
 
 # set nginx
-RUN apt update
+#RUN apt update
 #RUN apt install iproute2 nginx -y
 #RUN rm -R /etc/nginx/sites-enabled/*
 #COPY /nginx/site-available/* /etc/nginx/sites-enabled
