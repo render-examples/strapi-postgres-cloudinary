@@ -3,7 +3,7 @@ FROM node:14-buster as Build
 WORKDIR /app
 COPY / /app
 ENV YARN_CACHE_FOLDER=/root/.yarn
-RUN --mount=type=cache,target=/root/.yarn yarn install
+RUN --mount=type=cache,target=/root/.yarn yarn install --frozen-lockfile
 
 
 FROM node:14-buster-slim as Runtime
