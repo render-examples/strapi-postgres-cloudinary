@@ -8,22 +8,28 @@ services:
     healthCheckPath: /_health
     envVars:
       - key: NODE_ENV
-        value: production
+        fromGourp: babystory-production
       - key: CLOUDINARY_NAME
+        fromGourp: babystory-production
         sync: false
       - key: CLOUDINARY_KEY
+        fromGourp: babystory-production
         sync: false
       - key: CLOUDINARY_SECRET
+        fromGourp: babystory-production
         sync: false
       - key: DATABASE_URL
         fromDatabase:
           name: strapi
           property: connectionString
       - key: JWT_SECRET
+        fromGroup: babystory-production
         generateValue: false
       - key: ADMIN_JWT_SECRET
+        fromGroup: babystory-production
         generateValue: false
       - key: APP_KEYS
+        fromGroup: babystory-production
         generateValue: true
       - key: DB_CLIENT_DEBUG
         value: false
