@@ -3,9 +3,8 @@ services:
     name: strapi
     env: docker
     plan: starter
-    buildCommand: yarn install && yarn build
-    startCommand: yarn start
     healthCheckPath: /_health
+    region: oregon
     envVars:
       - key: DATABASE_URL
         fromDatabase:
