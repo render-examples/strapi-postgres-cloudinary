@@ -7,24 +7,10 @@ services:
     startCommand: yarn start
     healthCheckPath: /_health
     envVars:
-      - key: NODE_ENV
-        fromGourp: babystory-production
-      - key: CLOUDINARY_NAME
-        fromGourp: babystory-production
-      - key: CLOUDINARY_KEY
-        fromGourp: babystory-production
-      - key: CLOUDINARY_SECRET
-        fromGourp: babystory-production
       - key: DATABASE_URL
         fromDatabase:
           name: strapi
           property: connectionString
-      - key: JWT_SECRET
-        fromGroup: babystory-production
-      - key: ADMIN_JWT_SECRET
-        fromGroup: babystory-production
-      - key: APP_KEYS
-        fromGroup: babystory-production
       - key: DB_CLIENT_DEBUG
         value: false
       - key: LOG_LEVEL
@@ -34,6 +20,7 @@ services:
           type: redis
           name: redis-thunder
           property: connectionString
+      - fromGroup: babystory-production
   - type: redis
     name: redis-thunder
     region: oregon
