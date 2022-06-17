@@ -1,7 +1,7 @@
 services:
   - type: web
     name: strapi
-    env: node
+    env: docker
     plan: starter
     buildCommand: yarn install && yarn build
     startCommand: yarn start
