@@ -20,7 +20,6 @@ COPY --from=Build /app /app
 ENV NODE_ENV=production
 ENV DATABASE_URL=''
 ENV API_TOKEN_SALT=''
-ENV SERVE_ADMIN_PANEL=true
 ENV YARN_CACHE_FOLDER=/root/.yarn
 ENV PATH="/app/node_modules/.bin:${PATH}"
 EXPOSE 1337/tcp
