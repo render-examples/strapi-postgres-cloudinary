@@ -6,6 +6,7 @@ services:
     buildCommand: yarn install && yarn build
     startCommand: yarn start
     healthCheckPath: /_health
+    autoDeploy: false
     envVars:
       - key: NODE_VERSION
         value: ~16.13.0
