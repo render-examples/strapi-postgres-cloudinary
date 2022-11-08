@@ -3,6 +3,7 @@ services:
     name: strapi
     env: node
     plan: starter
+    region: frankfurt
     buildCommand: yarn install && yarn build
     startCommand: yarn start
     healthCheckPath: /_health
@@ -32,3 +33,4 @@ services:
 databases:
   - name: strapi
     plan: starter
+    region: frankfurt
