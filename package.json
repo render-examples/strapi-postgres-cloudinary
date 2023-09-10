@@ -11,10 +11,11 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.1.7",
-    "@strapi/plugin-users-permissions": "4.1.7",
-    "@strapi/plugin-i18n": "4.1.7",
-    "@strapi/provider-upload-cloudinary": "4.1.7",
+    "@strapi/strapi": "4.13.3",
+    "@strapi/plugin-users-permissions": "4.13.3",
+    "@strapi/plugin-i18n": "4.13.3",
+    "@strapi/provider-upload-cloudinary": "4.13.3",
+    "better-sqlite3": "7.4.6",
     "pg": "^8.7.0",
     "pg-connection-string": "^2.5.0",
     "sqlite3": "latest"
