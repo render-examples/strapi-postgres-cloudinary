@@ -30,5 +30,5 @@ services:
         generateValue: true
 
 databases:
-  - name: strapi_carasso
+  - name: strapi
     plan: starter
