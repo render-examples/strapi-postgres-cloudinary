@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: strapi
+    name: strapi_carasso
     env: node
     plan: starter
     buildCommand: yarn install && yarn build
@@ -30,5 +30,5 @@ services:
         generateValue: true
 
 databases:
-  - name: strapi
+  - name: strapi_carasso
     plan: starter
