@@ -375,9 +375,8 @@ export interface ApiPostPost extends Schema.CollectionType {
   };
   attributes: {
     title: Attribute.String;
-    slug: Attribute.UID<'api::post.post', 'title'>;
-    Content: Attribute.Blocks;
-    creation_time: Attribute.DateTime;
+    Content: Attribute.String;
+    media: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

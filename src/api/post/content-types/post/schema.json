@@ -15,15 +15,18 @@
     "title": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
     "Content": {
-      "type": "blocks"
+      "type": "string"
     },
-    "creation_time": {
-      "type": "datetime"
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
