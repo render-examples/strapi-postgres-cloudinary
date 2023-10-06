@@ -1947,7 +1947,7 @@
     "@strapi/utils" "4.14.3"
     sendmail "^1.6.1"
 
-"@strapi/provider-upload-cloudinary@4.14.3":
+"@strapi/provider-upload-cloudinary@^4.14.3":
   version "4.14.3"
   resolved "https://registry.yarnpkg.com/@strapi/provider-upload-cloudinary/-/provider-upload-cloudinary-4.14.3.tgz#96df53dd2d7bf1a9d4c9a46c71918ef3256ce1df"
   integrity sha512-ipOEHt+Ra+ci8a/UTsmOU23U8TWLeazDt/fEs1GRqnhF6WSr7IUWhnLbkU6Swwd40LsuRfk4axe/JoFK+qh7UA==
