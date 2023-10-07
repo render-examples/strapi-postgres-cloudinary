@@ -16,9 +16,23 @@
       "type": "string"
     },
     "Content": {
-      "type": "string"
+      "type": "text"
     },
     "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content_1": {
+      "type": "text"
+    },
+    "media_1": {
       "allowedTypes": [
         "images",
         "files",
