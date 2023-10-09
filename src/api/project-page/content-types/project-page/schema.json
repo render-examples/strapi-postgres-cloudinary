@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "project_pages",
+  "info": {
+    "singularName": "project-page",
+    "pluralName": "project-pages",
+    "displayName": "ProjectPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

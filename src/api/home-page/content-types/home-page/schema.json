@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "pages",
+  "collectionName": "home_pages",
   "info": {
-    "singularName": "page",
-    "pluralName": "pages",
-    "displayName": "HomePage",
-    "description": ""
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "HomePage"
   },
   "options": {
     "draftAndPublish": true
@@ -15,12 +14,12 @@
     "Title": {
       "type": "string"
     },
-    "TopImage": {
+    "Media": {
       "allowedTypes": [
         "images"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": true
     }
   }
 }

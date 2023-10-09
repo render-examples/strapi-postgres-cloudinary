@@ -362,26 +362,33 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiPagePage extends Schema.SingleType {
-  collectionName: 'pages';
+export interface ApiHomePageHomePage extends Schema.SingleType {
+  collectionName: 'home_pages';
   info: {
-    singularName: 'page';
-    pluralName: 'pages';
+    singularName: 'home-page';
+    pluralName: 'home-pages';
     displayName: 'HomePage';
-    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     Title: Attribute.String;
-    TopImage: Attribute.Media;
+    Media: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+    createdBy: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'admin::user'
+    > &
       Attribute.Private;
-    updatedBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+    updatedBy: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'admin::user'
+    > &
       Attribute.Private;
   };
 }
@@ -407,6 +414,36 @@ export interface ApiPostPost extends Schema.CollectionType {
     createdBy: Attribute.Relation<'api::post.post', 'oneToOne', 'admin::user'> &
       Attribute.Private;
     updatedBy: Attribute.Relation<'api::post.post', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiProjectPageProjectPage extends Schema.SingleType {
+  collectionName: 'project_pages';
+  info: {
+    singularName: 'project-page';
+    pluralName: 'project-pages';
+    displayName: 'ProjectPage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Image: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::project-page.project-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::project-page.project-page',
+      'oneToOne',
+      'admin::user'
+    > &
       Attribute.Private;
   };
 }
@@ -735,8 +772,9 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::page.page': ApiPagePage;
+      'api::home-page.home-page': ApiHomePageHomePage;
       'api::post.post': ApiPostPost;
+      'api::project-page.project-page': ApiProjectPageProjectPage;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::i18n.locale': PluginI18NLocale;
