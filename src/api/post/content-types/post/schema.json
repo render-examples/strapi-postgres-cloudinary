@@ -28,19 +28,6 @@
         "videos",
         "audios"
       ]
-    },
-    "content_1": {
-      "type": "text"
-    },
-    "media_1": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
     }
   }
 }
