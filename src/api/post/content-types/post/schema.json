@@ -29,6 +29,12 @@
     "slug": {
       "type": "uid",
       "targetField": "Title"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "posts"
     }
   }
 }
