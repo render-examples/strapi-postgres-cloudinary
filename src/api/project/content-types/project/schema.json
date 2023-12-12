@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Tiltle": {
+    "project_name": {
       "type": "string"
     },
     "City": {

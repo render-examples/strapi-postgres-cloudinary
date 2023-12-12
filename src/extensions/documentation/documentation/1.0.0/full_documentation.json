@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-12-11T20:47:44.827Z"
+    "x-generation-date": "2023-12-12T12:43:18.676Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1251,7 +1251,7 @@
                                               "attributes": {
                                                 "type": "object",
                                                 "properties": {
-                                                  "Tiltle": {
+                                                  "project_name": {
                                                     "type": "string"
                                                   },
                                                   "City": {
@@ -2780,7 +2780,7 @@
                                                           "attributes": {
                                                             "type": "object",
                                                             "properties": {
-                                                              "Tiltle": {
+                                                              "project_name": {
                                                                 "type": "string"
                                                               },
                                                               "City": {
@@ -3290,7 +3290,7 @@
             ],
             "type": "object",
             "properties": {
-              "Tiltle": {
+              "project_name": {
                 "type": "string"
               },
               "City": {
@@ -3380,7 +3380,7 @@
           "City"
         ],
         "properties": {
-          "Tiltle": {
+          "project_name": {
             "type": "string"
           },
           "City": {
@@ -3418,7 +3418,7 @@
                                 "attributes": {
                                   "type": "object",
                                   "properties": {
-                                    "Tiltle": {
+                                    "project_name": {
                                       "type": "string"
                                     },
                                     "City": {
@@ -4965,7 +4965,7 @@
                   "attributes": {
                     "type": "object",
                     "properties": {
-                      "Tiltle": {
+                      "project_name": {
                         "type": "string"
                       },
                       "City": {

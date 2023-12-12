@@ -448,7 +448,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Tiltle: Attribute.String;
+    project_name: Attribute.String;
     City: Attribute.String & Attribute.Required;
     Summery: Attribute.Text;
     tags: Attribute.Relation<
