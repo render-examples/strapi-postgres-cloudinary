@@ -481,6 +481,7 @@ export interface ApiTagTag extends Schema.CollectionType {
     singularName: 'tag';
     pluralName: 'tags';
     displayName: 'tag';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -493,6 +494,10 @@ export interface ApiTagTag extends Schema.CollectionType {
       'api::project.project'
     >;
     post: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::post.post'>;
+    tags_categories: Attribute.Enumeration<
+      ['cat 1', 'cat 2', 'cat 3', 'cat 4', 'cat 5', 'cat 6', 'cat 7', 'cat 8']
+    > &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

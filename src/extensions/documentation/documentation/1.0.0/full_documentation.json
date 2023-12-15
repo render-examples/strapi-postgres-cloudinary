@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-12-12T12:43:18.676Z"
+    "x-generation-date": "2023-12-15T13:26:47.249Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -25,7 +25,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:1338/api",
+      "url": "http://localhost:1337/api",
       "description": "Development server"
     }
   ],
@@ -1487,6 +1487,19 @@
                                             }
                                           }
                                         }
+                                      },
+                                      "tags_categories": {
+                                        "type": "string",
+                                        "enum": [
+                                          "cat 1",
+                                          "cat 2",
+                                          "cat 3",
+                                          "cat 4",
+                                          "cat 5",
+                                          "cat 6",
+                                          "cat 7",
+                                          "cat 8"
+                                        ]
                                       },
                                       "createdAt": {
                                         "type": "string",
@@ -3016,6 +3029,19 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "tags_categories": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "cat 1",
+                                                      "cat 2",
+                                                      "cat 3",
+                                                      "cat 4",
+                                                      "cat 5",
+                                                      "cat 6",
+                                                      "cat 7",
+                                                      "cat 8"
+                                                    ]
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -4595,6 +4621,19 @@
                             }
                           }
                         },
+                        "tags_categories": {
+                          "type": "string",
+                          "enum": [
+                            "cat 1",
+                            "cat 2",
+                            "cat 3",
+                            "cat 4",
+                            "cat 5",
+                            "cat 6",
+                            "cat 7",
+                            "cat 8"
+                          ]
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -4865,7 +4904,8 @@
         "properties": {
           "data": {
             "required": [
-              "tag"
+              "tag",
+              "tags_categories"
             ],
             "type": "object",
             "properties": {
@@ -4893,6 +4933,19 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "tags_categories": {
+                "type": "string",
+                "enum": [
+                  "cat 1",
+                  "cat 2",
+                  "cat 3",
+                  "cat 4",
+                  "cat 5",
+                  "cat 6",
+                  "cat 7",
+                  "cat 8"
+                ]
               }
             }
           }
@@ -4947,7 +5000,8 @@
       "Tag": {
         "type": "object",
         "required": [
-          "tag"
+          "tag",
+          "tags_categories"
         ],
         "properties": {
           "tag": {
@@ -5965,6 +6019,19 @@
                                         }
                                       }
                                     },
+                                    "tags_categories": {
+                                      "type": "string",
+                                      "enum": [
+                                        "cat 1",
+                                        "cat 2",
+                                        "cat 3",
+                                        "cat 4",
+                                        "cat 5",
+                                        "cat 6",
+                                        "cat 7",
+                                        "cat 8"
+                                      ]
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -6225,6 +6292,19 @@
                 }
               }
             }
+          },
+          "tags_categories": {
+            "type": "string",
+            "enum": [
+              "cat 1",
+              "cat 2",
+              "cat 3",
+              "cat 4",
+              "cat 5",
+              "cat 6",
+              "cat 7",
+              "cat 8"
+            ]
           },
           "createdAt": {
             "type": "string",
