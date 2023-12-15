@@ -426,6 +426,7 @@ export interface ApiPostPost extends Schema.CollectionType {
       'api::author.author'
     >;
     tags: Attribute.Relation<'api::post.post', 'oneToMany', 'api::tag.tag'>;
+    More_Content_on_Post: Attribute.Component<'componnents.post-content', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -494,10 +495,6 @@ export interface ApiTagTag extends Schema.CollectionType {
       'api::project.project'
     >;
     post: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::post.post'>;
-    tags_categories: Attribute.Enumeration<
-      ['cat 1', 'cat 2', 'cat 3', 'cat 4', 'cat 5', 'cat 6', 'cat 7', 'cat 8']
-    > &
-      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

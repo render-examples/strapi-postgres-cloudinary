@@ -28,20 +28,6 @@
       "relation": "manyToOne",
       "target": "api::post.post",
       "inversedBy": "tags"
-    },
-    "tags_categories": {
-      "type": "enumeration",
-      "enum": [
-        "cat 1",
-        "cat 2",
-        "cat 3",
-        "cat 4",
-        "cat 5",
-        "cat 6",
-        "cat 7",
-        "cat 8"
-      ],
-      "required": true
     }
   }
 }
