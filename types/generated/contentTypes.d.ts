@@ -427,6 +427,8 @@ export interface ApiPostPost extends Schema.CollectionType {
     >;
     tags: Attribute.Relation<'api::post.post', 'oneToMany', 'api::tag.tag'>;
     More_Content_on_Post: Attribute.Component<'componnents.post-content', true>;
+    Dynamic: Attribute.DynamicZone<['componnents.zone']>;
+    markdown: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

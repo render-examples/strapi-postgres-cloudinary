@@ -1,7 +1,8 @@
 {
   "collectionName": "components_componnents_post_contents",
   "info": {
-    "displayName": "Post_Content"
+    "displayName": "Post_Content",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,15 +12,16 @@
       "unique": false
     },
     "First_paragraph": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "section_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "section_link_text": {
       "type": "richtext"

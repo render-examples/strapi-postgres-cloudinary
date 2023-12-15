@@ -46,6 +46,15 @@
       "type": "component",
       "repeatable": true,
       "component": "componnents.post-content"
+    },
+    "Dynamic": {
+      "type": "dynamiczone",
+      "components": [
+        "componnents.zone"
+      ]
+    },
+    "markdown": {
+      "type": "richtext"
     }
   }
 }
