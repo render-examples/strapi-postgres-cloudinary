@@ -1,5 +1,18 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface ComponnentsComp1 extends Schema.Component {
+  collectionName: 'components_componnents_comp1s';
+  info: {
+    displayName: 'comp1';
+    description: '';
+  };
+  attributes: {
+    text: Attribute.String;
+    media: Attribute.Media;
+    markdown: Attribute.RichText;
+  };
+}
+
 export interface ComponnentsPostContent extends Schema.Component {
   collectionName: 'components_componnents_post_contents';
   info: {
@@ -28,6 +41,7 @@ export interface ComponnentsZone extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'componnents.comp1': ComponnentsComp1;
       'componnents.post-content': ComponnentsPostContent;
       'componnents.zone': ComponnentsZone;
     }

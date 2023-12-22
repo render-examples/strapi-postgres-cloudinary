@@ -41,20 +41,6 @@
       "relation": "oneToMany",
       "target": "api::tag.tag",
       "mappedBy": "post"
-    },
-    "More_Content_on_Post": {
-      "type": "component",
-      "repeatable": true,
-      "component": "componnents.post-content"
-    },
-    "Dynamic": {
-      "type": "dynamiczone",
-      "components": [
-        "componnents.zone"
-      ]
-    },
-    "markdown": {
-      "type": "richtext"
     }
   }
 }
