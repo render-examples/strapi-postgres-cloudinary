@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shops",
+  "info": {
+    "singularName": "shop",
+    "pluralName": "shops",
+    "displayName": "Shop",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Shop_title": {
+      "type": "string"
+    },
+    "Shop_phone": {
+      "type": "string"
+    },
+    "Shop_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Shop_opening_hours": {
+      "type": "string",
+      "regex": "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"
+    },
+    "Shop_closing_hours": {
+      "type": "string",
+      "regex": "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"
+    },
+    "Shop_opening_hours_friday": {
+      "type": "string",
+      "regex": "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"
+    },
+    "Shop_closing_hours_friday": {
+      "type": "string",
+      "regex": "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"
+    },
+    "saturday_status": {
+      "type": "boolean"
+    },
+    "Shop_opening_hours_saturday": {
+      "type": "string",
+      "regex": "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"
+    },
+    "Shop_closing_hours_saturday": {
+      "type": "string",
+      "regex": "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"
+    }
+  }
+}
