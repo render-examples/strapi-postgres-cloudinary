@@ -17,12 +17,6 @@
       "required": true,
       "unique": true
     },
-    "project": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::project.project",
-      "inversedBy": "tags"
-    },
     "post": {
       "type": "relation",
       "relation": "manyToOne",

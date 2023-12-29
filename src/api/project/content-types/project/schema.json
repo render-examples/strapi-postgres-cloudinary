@@ -12,29 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "project_name": {
+    "Real_Estate_Project__c": {
       "type": "string"
     },
-    "City": {
+    "City__c": {
       "type": "string",
       "required": true
     },
-    "Summery": {
-      "type": "text"
+    "Nighborhood__c": {
+      "type": "string",
+      "maxLength": 50
     },
-    "tags": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tag.tag",
-      "mappedBy": "project"
+    "Street__c": {
+      "type": "string"
     },
-    "featured_image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "Assessing_Officer__c": {
+      "type": "string",
+      "maxLength": 50
     }
   }
 }

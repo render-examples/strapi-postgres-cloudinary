@@ -762,15 +762,17 @@ export interface ApiProjectProject extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    project_name: Attribute.String;
-    City: Attribute.String & Attribute.Required;
-    Summery: Attribute.Text;
-    tags: Attribute.Relation<
-      'api::project.project',
-      'oneToMany',
-      'api::tag.tag'
-    >;
-    featured_image: Attribute.Media;
+    Real_Estate_Project__c: Attribute.String;
+    City__c: Attribute.String & Attribute.Required;
+    Nighborhood__c: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 50;
+      }>;
+    Street__c: Attribute.String;
+    Assessing_Officer__c: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 50;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -834,11 +836,6 @@ export interface ApiTagTag extends Schema.CollectionType {
   };
   attributes: {
     tag: Attribute.String & Attribute.Required & Attribute.Unique;
-    project: Attribute.Relation<
-      'api::tag.tag',
-      'manyToOne',
-      'api::project.project'
-    >;
     post: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::post.post'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
