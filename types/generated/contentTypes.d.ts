@@ -773,6 +773,27 @@ export interface ApiProjectProject extends Schema.CollectionType {
       Attribute.SetMinMaxLength<{
         maxLength: 50;
       }>;
+    Phone__c: Attribute.String;
+    Cellphone__c: Attribute.String;
+    Location_Office_Sales__c: Attribute.String;
+    Bn_Number__c: Attribute.String;
+    Escort_Bank__c: Attribute.String;
+    Entrepreneurs_for_projects__c: Attribute.String;
+    Block__c: Attribute.String & Attribute.Required;
+    Piece_Of_Land__c: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 50;
+      }>;
+    Nickname__c: Attribute.String;
+    Link_to_wase__c: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 50;
+      }>;
+    Office_address__c: Attribute.String;
+    Company__c: Attribute.String;
+    Company_code__c: Attribute.String;
+    Serviceman_user__c: Attribute.String;
+    Account_Status_Information__c: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

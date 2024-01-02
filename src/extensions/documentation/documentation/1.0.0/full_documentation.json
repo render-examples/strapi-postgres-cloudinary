@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-12-28T15:30:25.437Z"
+    "x-generation-date": "2024-01-02T19:50:20.747Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2822,7 +2822,8 @@
         "properties": {
           "data": {
             "required": [
-              "City__c"
+              "City__c",
+              "Block__c"
             ],
             "type": "object",
             "properties": {
@@ -2839,6 +2840,51 @@
                 "type": "string"
               },
               "Assessing_Officer__c": {
+                "type": "string"
+              },
+              "Phone__c": {
+                "type": "string"
+              },
+              "Cellphone__c": {
+                "type": "string"
+              },
+              "Location_Office_Sales__c": {
+                "type": "string"
+              },
+              "Bn_Number__c": {
+                "type": "string"
+              },
+              "Escort_Bank__c": {
+                "type": "string"
+              },
+              "Entrepreneurs_for_projects__c": {
+                "type": "string"
+              },
+              "Block__c": {
+                "type": "string"
+              },
+              "Piece_Of_Land__c": {
+                "type": "string"
+              },
+              "Nickname__c": {
+                "type": "string"
+              },
+              "Link_to_wase__c": {
+                "type": "string"
+              },
+              "Office_address__c": {
+                "type": "string"
+              },
+              "Company__c": {
+                "type": "string"
+              },
+              "Company_code__c": {
+                "type": "string"
+              },
+              "Serviceman_user__c": {
+                "type": "string"
+              },
+              "Account_Status_Information__c": {
                 "type": "string"
               }
             }
@@ -2894,7 +2940,8 @@
       "Project": {
         "type": "object",
         "required": [
-          "City__c"
+          "City__c",
+          "Block__c"
         ],
         "properties": {
           "Real_Estate_Project__c": {
@@ -2910,6 +2957,51 @@
             "type": "string"
           },
           "Assessing_Officer__c": {
+            "type": "string"
+          },
+          "Phone__c": {
+            "type": "string"
+          },
+          "Cellphone__c": {
+            "type": "string"
+          },
+          "Location_Office_Sales__c": {
+            "type": "string"
+          },
+          "Bn_Number__c": {
+            "type": "string"
+          },
+          "Escort_Bank__c": {
+            "type": "string"
+          },
+          "Entrepreneurs_for_projects__c": {
+            "type": "string"
+          },
+          "Block__c": {
+            "type": "string"
+          },
+          "Piece_Of_Land__c": {
+            "type": "string"
+          },
+          "Nickname__c": {
+            "type": "string"
+          },
+          "Link_to_wase__c": {
+            "type": "string"
+          },
+          "Office_address__c": {
+            "type": "string"
+          },
+          "Company__c": {
+            "type": "string"
+          },
+          "Company_code__c": {
+            "type": "string"
+          },
+          "Serviceman_user__c": {
+            "type": "string"
+          },
+          "Account_Status_Information__c": {
             "type": "string"
           },
           "createdAt": {

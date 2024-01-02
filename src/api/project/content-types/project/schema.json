@@ -29,6 +29,54 @@
     "Assessing_Officer__c": {
       "type": "string",
       "maxLength": 50
+    },
+    "Phone__c": {
+      "type": "string"
+    },
+    "Cellphone__c": {
+      "type": "string"
+    },
+    "Location_Office_Sales__c": {
+      "type":"string"
+    },
+    "Bn_Number__c": {
+      "type":"string"
+    },
+    "Escort_Bank__c": {
+      "type":"string"
+    },
+    "Entrepreneurs_for_projects__c": {
+      "type": "string"
+    },
+    "Block__c": {
+      "type": "string",
+      "required": true
+    },
+    "Piece_Of_Land__c": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "Nickname__c": {
+      "type": "string"
+    },
+    "Link_to_wase__c": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "Office_address__c": {
+      "type": "string"
+    },
+    "Company__c": {
+      "type": "string"
+    },
+    "Company_code__c": {
+      "type":"string"
+    },
+    "Serviceman_user__c": {
+      "type":"string"
+    },
+    "Account_Status_Information__c": {
+      "type":"string"
     }
   }
 }
