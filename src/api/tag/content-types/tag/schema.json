@@ -22,6 +22,12 @@
       "relation": "manyToOne",
       "target": "api::post.post",
       "inversedBy": "tags"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "tags"
     }
   }
 }

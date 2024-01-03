@@ -12,71 +12,252 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Real_Estate_Project__c": {
+    "Brand_name": {
+      "type": "string"
+    },
+    "Brand_Slogan": {
       "type": "string"
     },
     "City__c": {
-      "type": "string",
-      "required": true
-    },
-    "Nighborhood__c": {
-      "type": "string",
-      "maxLength": 50
-    },
-    "Street__c": {
       "type": "string"
     },
-    "Assessing_Officer__c": {
-      "type": "string",
-      "maxLength": 50
-    },
-    "Phone__c": {
+    "Brand_Type": {
       "type": "string"
     },
-    "Cellphone__c": {
+    "Hero_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "project_status": {
       "type": "string"
     },
-    "Location_Office_Sales__c": {
-      "type":"string"
-    },
-    "Bn_Number__c": {
-      "type":"string"
-    },
-    "Escort_Bank__c": {
-      "type":"string"
-    },
-    "Entrepreneurs_for_projects__c": {
+    "Main_title": {
       "type": "string"
     },
-    "Block__c": {
-      "type": "string",
-      "required": true
+    "Main_description": {
+      "type": "text"
     },
-    "Piece_Of_Land__c": {
-      "type": "string",
-      "maxLength": 50
+    "Main_featured_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     },
-    "Nickname__c": {
+    "Secondary_featured_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Main_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "projects"
+    },
+    "buildings": {
       "type": "string"
     },
-    "Link_to_wase__c": {
-      "type": "string",
-      "maxLength": 50
-    },
-    "Office_address__c": {
+    "floors": {
       "type": "string"
     },
-    "Company__c": {
+    "Apartments": {
       "type": "string"
     },
-    "Company_code__c": {
-      "type":"string"
+    "rooms": {
+      "type": "string"
     },
-    "Serviceman_user__c": {
-      "type":"string"
+    "tab_name_a": {
+      "type": "string"
     },
-    "Account_Status_Information__c": {
-      "type":"string"
+    "Tab_subtitle_a": {
+      "type": "string"
+    },
+    "Tab_description_a": {
+      "type": "text"
+    },
+    "Tab_single_main_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Tab_galery_a": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Secondery_image_a": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Tab_name_b": {
+      "type": "string"
+    },
+    "featured_icon_1_b": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "featured_title_1_b": {
+      "type": "string"
+    },
+    "featured_description_1_b": {
+      "type": "text"
+    },
+    "featured_icon_2_b": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "featured_title_2_b": {
+      "type": "string"
+    },
+    "featured_description_2_b": {
+      "type": "text"
+    },
+    "featured_icon_3_b": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "featured_title_3_b": {
+      "type": "string"
+    },
+    "featured_description_3_b": {
+      "type": "text"
+    },
+    "Tab_galery_b": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "tab_name_c": {
+      "type": "string"
+    },
+    "Tab_description_c": {
+      "type": "text"
+    },
+    "Tab_main_image_c": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Tab_secondery_image_c": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Surrounding_description": {
+      "type": "text"
+    },
+    "Surrounding_image_1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Surrounding_title_1": {
+      "type": "string"
+    },
+    "Surrounding_image_2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Surrounding_title_2": {
+      "type": "string"
+    },
+    "Surrounding_image_3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Surrounding_title_3": {
+      "type": "string"
     }
   }
 }

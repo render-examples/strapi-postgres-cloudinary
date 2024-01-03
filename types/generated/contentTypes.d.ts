@@ -362,6 +362,219 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
+export interface ApiAuthorAuthor extends Schema.CollectionType {
+  collectionName: 'authors';
+  info: {
+    singularName: 'author';
+    pluralName: 'authors';
+    displayName: 'Author';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    name: Attribute.String;
+    avatar: Attribute.Media;
+    email: Attribute.String;
+    posts: Attribute.Relation<
+      'api::author.author',
+      'oneToMany',
+      'api::post.post'
+    >;
+    post: Attribute.Relation<
+      'api::author.author',
+      'manyToOne',
+      'api::post.post'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::author.author',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::author.author',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPostPost extends Schema.CollectionType {
+  collectionName: 'posts';
+  info: {
+    singularName: 'post';
+    pluralName: 'posts';
+    displayName: 'Post';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Content: Attribute.Text;
+    Media: Attribute.Media;
+    slug: Attribute.UID<'api::post.post', 'Title'>;
+    author: Attribute.Relation<
+      'api::post.post',
+      'manyToOne',
+      'api::author.author'
+    >;
+    tags: Attribute.Relation<'api::post.post', 'oneToMany', 'api::tag.tag'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::post.post', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::post.post', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiProjectProject extends Schema.CollectionType {
+  collectionName: 'projects';
+  info: {
+    singularName: 'project';
+    pluralName: 'projects';
+    displayName: 'Project';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Brand_name: Attribute.String;
+    Brand_Slogan: Attribute.String;
+    City__c: Attribute.String;
+    Brand_Type: Attribute.String;
+    Hero_image: Attribute.Media;
+    project_status: Attribute.String;
+    Main_title: Attribute.String;
+    Main_description: Attribute.Text;
+    Main_featured_image: Attribute.Media;
+    Secondary_featured_image: Attribute.Media;
+    Main_logo: Attribute.Media;
+    tags: Attribute.Relation<
+      'api::project.project',
+      'manyToMany',
+      'api::tag.tag'
+    >;
+    buildings: Attribute.String;
+    floors: Attribute.String;
+    Apartments: Attribute.String;
+    rooms: Attribute.String;
+    tab_name_a: Attribute.String;
+    Tab_subtitle_a: Attribute.String;
+    Tab_description_a: Attribute.Text;
+    Tab_single_main_image: Attribute.Media;
+    Tab_galery_a: Attribute.Media;
+    Secondery_image_a: Attribute.Media;
+    Tab_name_b: Attribute.String;
+    featured_icon_1_b: Attribute.Media;
+    featured_title_1_b: Attribute.String;
+    featured_description_1_b: Attribute.Text;
+    featured_icon_2_b: Attribute.Media;
+    featured_title_2_b: Attribute.String;
+    featured_description_2_b: Attribute.Text;
+    featured_icon_3_b: Attribute.Media;
+    featured_title_3_b: Attribute.String;
+    featured_description_3_b: Attribute.Text;
+    Tab_galery_b: Attribute.Media;
+    tab_name_c: Attribute.String;
+    Tab_description_c: Attribute.Text;
+    Tab_main_image_c: Attribute.Media;
+    Tab_secondery_image_c: Attribute.Media;
+    Surrounding_description: Attribute.Text;
+    Surrounding_image_1: Attribute.Media;
+    Surrounding_title_1: Attribute.String;
+    Surrounding_image_2: Attribute.Media;
+    Surrounding_title_2: Attribute.String;
+    Surrounding_image_3: Attribute.Media;
+    Surrounding_title_3: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::project.project',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::project.project',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiShopShop extends Schema.CollectionType {
+  collectionName: 'shops';
+  info: {
+    singularName: 'shop';
+    pluralName: 'shops';
+    displayName: 'Shop';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Shop_title: Attribute.String;
+    Shop_phone: Attribute.String;
+    Shop_logo: Attribute.Media;
+    Shop_opening_hours: Attribute.String;
+    Shop_closing_hours: Attribute.String;
+    Shop_opening_hours_friday: Attribute.String;
+    Shop_closing_hours_friday: Attribute.String;
+    saturday_status: Attribute.Boolean;
+    Shop_opening_hours_saturday: Attribute.String;
+    Shop_closing_hours_saturday: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::shop.shop', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::shop.shop', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiTagTag extends Schema.CollectionType {
+  collectionName: 'tags';
+  info: {
+    singularName: 'tag';
+    pluralName: 'tags';
+    displayName: 'tag';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    tag: Attribute.String & Attribute.Required & Attribute.Unique;
+    post: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::post.post'>;
+    projects: Attribute.Relation<
+      'api::tag.tag',
+      'manyToMany',
+      'api::project.project'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::tag.tag', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::tag.tag', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -676,198 +889,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
-export interface ApiAuthorAuthor extends Schema.CollectionType {
-  collectionName: 'authors';
-  info: {
-    singularName: 'author';
-    pluralName: 'authors';
-    displayName: 'Author';
-    description: '';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    name: Attribute.String;
-    avatar: Attribute.Media;
-    email: Attribute.String;
-    posts: Attribute.Relation<
-      'api::author.author',
-      'oneToMany',
-      'api::post.post'
-    >;
-    post: Attribute.Relation<
-      'api::author.author',
-      'manyToOne',
-      'api::post.post'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::author.author',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::author.author',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiPostPost extends Schema.CollectionType {
-  collectionName: 'posts';
-  info: {
-    singularName: 'post';
-    pluralName: 'posts';
-    displayName: 'Post';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Title: Attribute.String;
-    Content: Attribute.Text;
-    Media: Attribute.Media;
-    slug: Attribute.UID<'api::post.post', 'Title'>;
-    author: Attribute.Relation<
-      'api::post.post',
-      'manyToOne',
-      'api::author.author'
-    >;
-    tags: Attribute.Relation<'api::post.post', 'oneToMany', 'api::tag.tag'>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::post.post', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<'api::post.post', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-  };
-}
-
-export interface ApiProjectProject extends Schema.CollectionType {
-  collectionName: 'projects';
-  info: {
-    singularName: 'project';
-    pluralName: 'projects';
-    displayName: 'Project';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Real_Estate_Project__c: Attribute.String;
-    City__c: Attribute.String & Attribute.Required;
-    Nighborhood__c: Attribute.String &
-      Attribute.SetMinMaxLength<{
-        maxLength: 50;
-      }>;
-    Street__c: Attribute.String;
-    Assessing_Officer__c: Attribute.String &
-      Attribute.SetMinMaxLength<{
-        maxLength: 50;
-      }>;
-    Phone__c: Attribute.String;
-    Cellphone__c: Attribute.String;
-    Location_Office_Sales__c: Attribute.String;
-    Bn_Number__c: Attribute.String;
-    Escort_Bank__c: Attribute.String;
-    Entrepreneurs_for_projects__c: Attribute.String;
-    Block__c: Attribute.String & Attribute.Required;
-    Piece_Of_Land__c: Attribute.String &
-      Attribute.SetMinMaxLength<{
-        maxLength: 50;
-      }>;
-    Nickname__c: Attribute.String;
-    Link_to_wase__c: Attribute.String &
-      Attribute.SetMinMaxLength<{
-        maxLength: 50;
-      }>;
-    Office_address__c: Attribute.String;
-    Company__c: Attribute.String;
-    Company_code__c: Attribute.String;
-    Serviceman_user__c: Attribute.String;
-    Account_Status_Information__c: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::project.project',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::project.project',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiShopShop extends Schema.CollectionType {
-  collectionName: 'shops';
-  info: {
-    singularName: 'shop';
-    pluralName: 'shops';
-    displayName: 'Shop';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Shop_title: Attribute.String;
-    Shop_phone: Attribute.String;
-    Shop_logo: Attribute.Media;
-    Shop_opening_hours: Attribute.String;
-    Shop_closing_hours: Attribute.String;
-    Shop_opening_hours_friday: Attribute.String;
-    Shop_closing_hours_friday: Attribute.String;
-    saturday_status: Attribute.Boolean;
-    Shop_opening_hours_saturday: Attribute.String;
-    Shop_closing_hours_saturday: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::shop.shop', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<'api::shop.shop', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-  };
-}
-
-export interface ApiTagTag extends Schema.CollectionType {
-  collectionName: 'tags';
-  info: {
-    singularName: 'tag';
-    pluralName: 'tags';
-    displayName: 'tag';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    tag: Attribute.String & Attribute.Required & Attribute.Unique;
-    post: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::post.post'>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::tag.tag', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<'api::tag.tag', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -878,17 +899,17 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
+      'api::author.author': ApiAuthorAuthor;
+      'api::post.post': ApiPostPost;
+      'api::project.project': ApiProjectProject;
+      'api::shop.shop': ApiShopShop;
+      'api::tag.tag': ApiTagTag;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::i18n.locale': PluginI18NLocale;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
-      'api::author.author': ApiAuthorAuthor;
-      'api::post.post': ApiPostPost;
-      'api::project.project': ApiProjectProject;
-      'api::shop.shop': ApiShopShop;
-      'api::tag.tag': ApiTagTag;
     }
   }
 }
