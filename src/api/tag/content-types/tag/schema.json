@@ -28,6 +28,12 @@
       "relation": "manyToMany",
       "target": "api::project.project",
       "mappedBy": "tags"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "tags"
     }
   }
 }

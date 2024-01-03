@@ -718,6 +718,102 @@ export interface ApiAuthorAuthor extends Schema.CollectionType {
   };
 }
 
+export interface ApiBrandBrand extends Schema.CollectionType {
+  collectionName: 'brands';
+  info: {
+    singularName: 'brand';
+    pluralName: 'brands';
+    displayName: 'brand';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Brand_name: Attribute.String;
+    Brand_Slogan: Attribute.String;
+    City_c: Attribute.String;
+    Brand_Type: Attribute.String;
+    Hero_image: Attribute.Media;
+    project_status: Attribute.String;
+    Main_title: Attribute.String;
+    Main_description: Attribute.Text;
+    Main_featured_image: Attribute.Media;
+    Secondary_featured_image: Attribute.Media;
+    Main_logo: Attribute.Media;
+    tags: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tag.tag'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::brand.brand',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::brand.brand',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiBuildingBuilding extends Schema.CollectionType {
+  collectionName: 'buildings';
+  info: {
+    singularName: 'building';
+    pluralName: 'buildings';
+    displayName: 'Building';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Building_Number_for_formula__c: Attribute.String;
+    Land_Percent__c: Attribute.String;
+    Name: Attribute.String;
+    Plot__c: Attribute.String;
+    Plot1__c: Attribute.String;
+    Comments__c: Attribute.String;
+    Lot__c: Attribute.String;
+    Lot2__c: Attribute.String;
+    Address__c: Attribute.String;
+    Estimated_Delivery_Date__c: Attribute.String;
+    Estimated_Delivery_Date_T__c: Attribute.String;
+    Properties_count__c: Attribute.String;
+    Ground_Floor__c: Attribute.String;
+    Building_Number__c: Attribute.String;
+    SAP_Building_ID__c: Attribute.String;
+    CreatedById: Attribute.String;
+    City__c: Attribute.String;
+    Actively_Marketing__c: Attribute.Boolean;
+    Real_Estate_Project__c: Attribute.String;
+    Combination__c: Attribute.Boolean;
+    Floors__c: Attribute.String;
+    LastModifiedById: Attribute.String;
+    End_Sale_Date__c: Attribute.String;
+    Sale_Start_Date__c: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::building.building',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::building.building',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPostPost extends Schema.CollectionType {
   collectionName: 'posts';
   info: {
@@ -879,6 +975,7 @@ export interface ApiTagTag extends Schema.CollectionType {
       'manyToMany',
       'api::project.project'
     >;
+    brand: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::brand.brand'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -906,6 +1003,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::author.author': ApiAuthorAuthor;
+      'api::brand.brand': ApiBrandBrand;
+      'api::building.building': ApiBuildingBuilding;
       'api::post.post': ApiPostPost;
       'api::project.project': ApiProjectProject;
       'api::shop.shop': ApiShopShop;
