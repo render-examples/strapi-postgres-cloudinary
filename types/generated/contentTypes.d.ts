@@ -924,6 +924,36 @@ export interface ApiProjectProject extends Schema.CollectionType {
   };
 }
 
+export interface ApiPropertyProperty extends Schema.CollectionType {
+  collectionName: 'properties';
+  info: {
+    singularName: 'property';
+    pluralName: 'properties';
+    displayName: 'Property';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Internal_Property_ID__c: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::property.property',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::property.property',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiShopShop extends Schema.CollectionType {
   collectionName: 'shops';
   info: {
@@ -1007,6 +1037,7 @@ declare module '@strapi/types' {
       'api::building.building': ApiBuildingBuilding;
       'api::post.post': ApiPostPost;
       'api::project.project': ApiProjectProject;
+      'api::property.property': ApiPropertyProperty;
       'api::shop.shop': ApiShopShop;
       'api::tag.tag': ApiTagTag;
     }
