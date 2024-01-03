@@ -760,60 +760,6 @@ export interface ApiBrandBrand extends Schema.CollectionType {
   };
 }
 
-export interface ApiBuildingBuilding extends Schema.CollectionType {
-  collectionName: 'buildings';
-  info: {
-    singularName: 'building';
-    pluralName: 'buildings';
-    displayName: 'Building';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Building_Number_for_formula__c: Attribute.String;
-    Land_Percent__c: Attribute.String;
-    Name: Attribute.String;
-    Plot__c: Attribute.String;
-    Plot1__c: Attribute.String;
-    Comments__c: Attribute.String;
-    Lot__c: Attribute.String;
-    Lot2__c: Attribute.String;
-    Address__c: Attribute.String;
-    Estimated_Delivery_Date__c: Attribute.String;
-    Estimated_Delivery_Date_T__c: Attribute.String;
-    Properties_count__c: Attribute.String;
-    Ground_Floor__c: Attribute.String;
-    Building_Number__c: Attribute.String;
-    SAP_Building_ID__c: Attribute.String;
-    CreatedById: Attribute.String;
-    City__c: Attribute.String;
-    Actively_Marketing__c: Attribute.Boolean;
-    Real_Estate_Project__c: Attribute.String;
-    Combination__c: Attribute.Boolean;
-    Floors__c: Attribute.String;
-    LastModifiedById: Attribute.String;
-    End_Sale_Date__c: Attribute.String;
-    Sale_Start_Date__c: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::building.building',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::building.building',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiPostPost extends Schema.CollectionType {
   collectionName: 'posts';
   info: {
@@ -1034,7 +980,6 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::author.author': ApiAuthorAuthor;
       'api::brand.brand': ApiBrandBrand;
-      'api::building.building': ApiBuildingBuilding;
       'api::post.post': ApiPostPost;
       'api::project.project': ApiProjectProject;
       'api::property.property': ApiPropertyProperty;
