@@ -932,6 +932,76 @@ export interface ApiShopShop extends Schema.CollectionType {
   };
 }
 
+export interface ApiTabTab extends Schema.CollectionType {
+  collectionName: 'tabs';
+  info: {
+    singularName: 'tab';
+    pluralName: 'tabs';
+    displayName: 'Tab';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Tab_type_a: Attribute.String;
+    tab_name_type_1: Attribute.String;
+    Tab_subtitle_1: Attribute.String;
+    Tab_description_1: Attribute.String;
+    Media: Attribute.Media;
+    Tab_single_main_image: Attribute.Media;
+    Tab_galery_1: Attribute.Media;
+    Secondery_image_a: Attribute.Media;
+    Tab_type_b: Attribute.String;
+    tab_name_type_b: Attribute.String;
+    featured_icon_1_b: Attribute.Media;
+    featured_title_1_b: Attribute.String;
+    featured_description_1_b: Attribute.String;
+    featured_icon_2_2: Attribute.Media;
+    featured_title_2_b: Attribute.String;
+    featured_description_2_b: Attribute.String;
+    featured_icon_3_b: Attribute.Media;
+    featured_title_3_b: Attribute.String;
+    featured_description_3_b: Attribute.String;
+    Tab_galery_b: Attribute.Media;
+    Tab_type_c: Attribute.String;
+    tab_name_c: Attribute.String;
+    Tab_description_c: Attribute.String;
+    Tab_main_image_c: Attribute.Media;
+    Tab_secondery_image_c: Attribute.Media;
+    Tab_type_D: Attribute.String;
+    tab_name_D: Attribute.String;
+    tab_title_D: Attribute.String;
+    tab_title_bold_D: Attribute.String;
+    tab_subtitle_D: Attribute.String;
+    Tab_description_D: Attribute.String;
+    featured_image_D: Attribute.Media;
+    featured_small_image_D: Attribute.Media;
+    Tab_type_E: Attribute.String;
+    tab_name_E: Attribute.String;
+    tab_title_E: Attribute.String;
+    tab_title_bold_d: Attribute.String;
+    tab_subtitle_d: Attribute.String;
+    tab_bollet_1: Attribute.String;
+    tab_bollet_2: Attribute.String;
+    tab_bollet_3: Attribute.String;
+    tab_bollet_4: Attribute.String;
+    tab_bollet_5: Attribute.String;
+    tab_bollet_6: Attribute.String;
+    tab_bollet_7: Attribute.String;
+    tab_bollet_8: Attribute.String;
+    tab_bollet_9: Attribute.String;
+    featured_image_d: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::tab.tab', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::tab.tab', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiTagTag extends Schema.CollectionType {
   collectionName: 'tags';
   info: {
@@ -984,6 +1054,7 @@ declare module '@strapi/types' {
       'api::project.project': ApiProjectProject;
       'api::property.property': ApiPropertyProperty;
       'api::shop.shop': ApiShopShop;
+      'api::tab.tab': ApiTabTab;
       'api::tag.tag': ApiTagTag;
     }
   }

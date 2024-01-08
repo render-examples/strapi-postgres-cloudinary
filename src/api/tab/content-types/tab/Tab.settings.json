@@ -1,0 +1,203 @@
+{
+    "connection": "default",
+    "collectionName": "Tab",
+    "info": {
+      "name": "Tab",
+      "description": ""
+    },
+    "options": {
+      "increments": true,
+      "timestamps": true
+    },
+    "attributes": {
+      "Tab_type_a": {
+        "type": "string"
+      },
+      "tab_name_type_1": {
+        "type": "string"
+      },
+      "Tab_subtitle_1": {
+        "type": "string"
+      },
+      "Tab_description_1": {
+        "type": "string"
+      },
+      "Tab_single_main_image": {
+        "model": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "Tab_galery_1": {
+        "collection": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "Secondery_image_a": {
+        "model": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "Tab_type_b": {
+        "type": "string"
+      },
+      "tab_name_type_b": {
+        "type": "string"
+      },
+      "featured_icon_1_b": {
+        "model": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "featured_title_1_b": {
+        "type": "string"
+      },
+      "featured_description_1_b": {
+        "type": "string"
+      },
+      "featured_icon_2_2": {
+        "model": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "featured_title_2_b": {
+        "type": "string"
+      },
+      "featured_description_2_b": {
+        "type": "string"
+      },
+      "featured_icon_3_b": {
+        "model": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "featured_title_3_b": {
+        "type": "string"
+      },
+      "featured_description_3_b": {
+        "type": "string"
+      },
+      "Tab_galery_b": {
+        "collection": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "Tab_type_c": {
+        "type": "string"
+      },
+      "tab_name_c": {
+        "type": "string"
+      },
+      "Tab_description_c": {
+        "type": "string"
+      },
+      "Tab_main_image_c": {
+        "collection": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "Tab_secondery_image_c": {
+        "model": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "Tab_type_D": {
+        "type": "string"
+      },
+      "tab_name_D": {
+        "type": "string"
+      },
+      "tab_title_D": {
+        "type": "string"
+      },
+      "tab_title_bold_D": {
+        "type": "string"
+      },
+      "tab_subtitle_D": {
+        "type": "string"
+      },
+      "Tab_description_D": {
+        "type": "string"
+      },
+      "featured_image_D": {
+        "model": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "featured_small_image_D": {
+        "model": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      },
+      "Tab_type_E": {
+        "type": "string"
+      },
+      "tab_name_E": {
+        "type": "string"
+      },
+      "tab_title_E": {
+        "type": "string"
+      },
+      "tab_title_bold_d": {
+        "type": "string"
+      },
+      "tab_subtitle_d": {
+        "type": "string"
+      },
+      "tab_bollet_1": {
+        "type": "string"
+      },
+      "tab_bollet_2": {
+        "type": "string"
+      },
+      "tab_bollet_3": {
+        "type": "string"
+      },
+      "tab_bollet_4": {
+        "type": "string"
+      },
+      "tab_bollet_5": {
+        "type": "string"
+      },
+      "tab_bollet_6": {
+        "type": "string"
+      },
+      "tab_bollet_7": {
+        "type": "string"
+      },
+      "tab_bollet_8": {
+        "type": "string"
+      },
+      "tab_bollet_9": {
+        "type": "string"
+      },
+      "featured_image_d": {
+        "model": "file",
+        "via": "related",
+        "allowedTypes": ["images"],
+        "plugin": "upload",
+        "required": false
+      }
+    }
+  }
