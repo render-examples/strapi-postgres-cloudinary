@@ -944,6 +944,11 @@ export interface ApiTabTab extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
+    Tab_type_a: Attribute.String;
+    tab_name_type_1: Attribute.String;
+    Tab_subtitle_1: Attribute.String;
+    Tab_description_1: Attribute.String;
+    image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

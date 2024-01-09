@@ -11,5 +11,26 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "Tab_type_a": {
+      "type": "string"
+    },
+    "tab_name_type_1": {
+      "type": "string"
+    },
+    "Tab_subtitle_1": {
+      "type": "string"
+    },
+    "Tab_description_1": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
 }
