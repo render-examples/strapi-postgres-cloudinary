@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-01-09T15:06:15.785Z"
+    "x-generation-date": "2024-01-09T15:11:28.390Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -20656,6 +20656,57 @@
               },
               "Occupied_until__c": {
                 "type": "string"
+              },
+              "P_Level__c": {
+                "type": "string"
+              },
+              "P_Num__c": {
+                "type": "string"
+              },
+              "Promotion_Price_Discount_Perc_20_80__c": {
+                "type": "string"
+              },
+              "Property_Num__c": {
+                "type": "string"
+              },
+              "Property_Size_Sqm_Formula__c": {
+                "type": "string"
+              },
+              "SAP_Building_ID__c": {
+                "type": "string"
+              },
+              "SAP_Property_ID__c": {
+                "type": "string"
+              },
+              "SAP_Property_Number__c": {
+                "type": "string"
+              },
+              "SOURCEID__c": {
+                "type": "string"
+              },
+              "warehouse_numbers__c": {
+                "type": "string"
+              },
+              "Discount_Percent_price_2_20_80__c": {
+                "type": "string"
+              },
+              "Base_Price_Discount_Percentage__c": {
+                "type": "string"
+              },
+              "Base_Price_Discount_Percentage2__c": {
+                "type": "string"
+              },
+              "Promotion_Price_Discount_Percentage__c": {
+                "type": "string"
+              },
+              "Proprety_Bmby_Name__c": {
+                "type": "string"
+              },
+              "Building__c": {
+                "type": "string"
+              },
+              "Building_Number_for_report__c": {
+                "type": "string"
               }
             }
           }
@@ -20744,6 +20795,57 @@
             "type": "string"
           },
           "Occupied_until__c": {
+            "type": "string"
+          },
+          "P_Level__c": {
+            "type": "string"
+          },
+          "P_Num__c": {
+            "type": "string"
+          },
+          "Promotion_Price_Discount_Perc_20_80__c": {
+            "type": "string"
+          },
+          "Property_Num__c": {
+            "type": "string"
+          },
+          "Property_Size_Sqm_Formula__c": {
+            "type": "string"
+          },
+          "SAP_Building_ID__c": {
+            "type": "string"
+          },
+          "SAP_Property_ID__c": {
+            "type": "string"
+          },
+          "SAP_Property_Number__c": {
+            "type": "string"
+          },
+          "SOURCEID__c": {
+            "type": "string"
+          },
+          "warehouse_numbers__c": {
+            "type": "string"
+          },
+          "Discount_Percent_price_2_20_80__c": {
+            "type": "string"
+          },
+          "Base_Price_Discount_Percentage__c": {
+            "type": "string"
+          },
+          "Base_Price_Discount_Percentage2__c": {
+            "type": "string"
+          },
+          "Promotion_Price_Discount_Percentage__c": {
+            "type": "string"
+          },
+          "Proprety_Bmby_Name__c": {
+            "type": "string"
+          },
+          "Building__c": {
+            "type": "string"
+          },
+          "Building_Number_for_report__c": {
             "type": "string"
           },
           "createdAt": {
