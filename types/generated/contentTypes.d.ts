@@ -944,6 +944,14 @@ export interface ApiTabTab extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
+    Tab_a: Attribute.DynamicZone<
+      [
+        'componnents.tab-1',
+        'componnents.tab-2',
+        'componnents.tab-3',
+        'componnents.tab-4'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

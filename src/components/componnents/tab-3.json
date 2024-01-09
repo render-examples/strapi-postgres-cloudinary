@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_componnents_tab_3s",
+  "info": {
+    "displayName": "Tab 3",
+    "icon": "moon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tab_name_c": {
+      "type": "string"
+    },
+    "Tab_description_c": {
+      "type": "string"
+    },
+    "Tab_main_image_c": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Tab_secondery_image_c": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

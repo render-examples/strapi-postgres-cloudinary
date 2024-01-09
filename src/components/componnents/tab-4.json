@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_componnents_tab_4s",
+  "info": {
+    "displayName": "Tab 4",
+    "icon": "crown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tab_name_d": {
+      "type": "string"
+    },
+    "tab_title_d": {
+      "type": "string"
+    },
+    "tab_description_c": {
+      "type": "text"
+    },
+    "tab_main_image_c": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tab_secondery_image_c": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

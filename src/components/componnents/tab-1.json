@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_componnents_tab_1s",
+  "info": {
+    "displayName": "Tab 1",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tab_name_type_a": {
+      "type": "string"
+    },
+    "Tab_subtitle_a": {
+      "type": "string"
+    },
+    "Tab_description_a": {
+      "type": "text"
+    },
+    "tab_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Tab_galery_a": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Secondery_image_a": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

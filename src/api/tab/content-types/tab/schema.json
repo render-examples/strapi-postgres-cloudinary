@@ -11,5 +11,15 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "Tab_a": {
+      "type": "dynamiczone",
+      "components": [
+        "componnents.tab-1",
+        "componnents.tab-2",
+        "componnents.tab-3",
+        "componnents.tab-4"
+      ]
+    }
+  }
 }
