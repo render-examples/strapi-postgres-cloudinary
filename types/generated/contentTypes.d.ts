@@ -932,6 +932,28 @@ export interface ApiShopShop extends Schema.CollectionType {
   };
 }
 
+export interface ApiTabTab extends Schema.CollectionType {
+  collectionName: 'tabs';
+  info: {
+    singularName: 'tab';
+    pluralName: 'tabs';
+    displayName: 'Tab';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::tab.tab', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::tab.tab', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiTagTag extends Schema.CollectionType {
   collectionName: 'tags';
   info: {
@@ -984,6 +1006,7 @@ declare module '@strapi/types' {
       'api::project.project': ApiProjectProject;
       'api::property.property': ApiPropertyProperty;
       'api::shop.shop': ApiShopShop;
+      'api::tab.tab': ApiTabTab;
       'api::tag.tag': ApiTagTag;
     }
   }
