@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-01-09T14:47:41.205Z"
+    "x-generation-date": "2024-01-09T15:06:15.785Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -20623,6 +20623,39 @@
             "properties": {
               "Internal_Property_ID__c": {
                 "type": "string"
+              },
+              "Apartment_Model_text__c": {
+                "type": "string"
+              },
+              "Building_Number_for_formula__c": {
+                "type": "string"
+              },
+              "Check_box_for_flow__c": {
+                "type": "boolean"
+              },
+              "Contract_Code__c": {
+                "type": "string"
+              },
+              "Flow_apartment_number__c": {
+                "type": "string"
+              },
+              "Flow_floor_Number__c": {
+                "type": "string"
+              },
+              "Flow_Room_Number__c": {
+                "type": "string"
+              },
+              "Multiplier__c": {
+                "type": "string"
+              },
+              "New_price_after_Update_20_80__c": {
+                "type": "string"
+              },
+              "New_price_after_ILS_Update__c": {
+                "type": "string"
+              },
+              "Occupied_until__c": {
+                "type": "string"
               }
             }
           }
@@ -20678,6 +20711,39 @@
         "type": "object",
         "properties": {
           "Internal_Property_ID__c": {
+            "type": "string"
+          },
+          "Apartment_Model_text__c": {
+            "type": "string"
+          },
+          "Building_Number_for_formula__c": {
+            "type": "string"
+          },
+          "Check_box_for_flow__c": {
+            "type": "boolean"
+          },
+          "Contract_Code__c": {
+            "type": "string"
+          },
+          "Flow_apartment_number__c": {
+            "type": "string"
+          },
+          "Flow_floor_Number__c": {
+            "type": "string"
+          },
+          "Flow_Room_Number__c": {
+            "type": "string"
+          },
+          "Multiplier__c": {
+            "type": "string"
+          },
+          "New_price_after_Update_20_80__c": {
+            "type": "string"
+          },
+          "New_price_after_ILS_Update__c": {
+            "type": "string"
+          },
+          "Occupied_until__c": {
             "type": "string"
           },
           "createdAt": {

@@ -876,12 +876,24 @@ export interface ApiPropertyProperty extends Schema.CollectionType {
     singularName: 'property';
     pluralName: 'properties';
     displayName: 'Property';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     Internal_Property_ID__c: Attribute.String;
+    Apartment_Model_text__c: Attribute.String;
+    Building_Number_for_formula__c: Attribute.String;
+    Check_box_for_flow__c: Attribute.Boolean;
+    Contract_Code__c: Attribute.String;
+    Flow_apartment_number__c: Attribute.String;
+    Flow_floor_Number__c: Attribute.String;
+    Flow_Room_Number__c: Attribute.String;
+    Multiplier__c: Attribute.String;
+    New_price_after_Update_20_80__c: Attribute.String;
+    New_price_after_ILS_Update__c: Attribute.String;
+    Occupied_until__c: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
