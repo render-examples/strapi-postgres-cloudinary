@@ -27,6 +27,75 @@ export interface ComponnentsPostContent extends Schema.Component {
   };
 }
 
+export interface ComponnentsTab1 extends Schema.Component {
+  collectionName: 'components_componnents_tab_1s';
+  info: {
+    displayName: 'Tab 1';
+    icon: 'alien';
+    description: '';
+  };
+  attributes: {
+    tab_name_type_a: Attribute.String;
+    Tab_subtitle_a: Attribute.String;
+    Tab_description_a: Attribute.Text;
+    tab_image: Attribute.Media;
+    Tab_galery_a: Attribute.Media;
+    Secondery_image_a: Attribute.Media;
+  };
+}
+
+export interface ComponnentsTab2 extends Schema.Component {
+  collectionName: 'components_componnents_tab_2s';
+  info: {
+    displayName: 'Tab 2';
+    icon: 'brush';
+    description: '';
+  };
+  attributes: {
+    tab_name_type_b: Attribute.String;
+    featured_title_1_b: Attribute.String;
+    featured_description_1_b: Attribute.Text;
+    featured_icon_2_2_b: Attribute.Media;
+    featured_title_2_b: Attribute.String;
+    featured_description_2_b: Attribute.Text;
+    featured_icon_3_b: Attribute.Media;
+    featured_title_3_b: Attribute.String;
+    featured_description_3_b: Attribute.String;
+    Tab_galery_b: Attribute.Media;
+  };
+}
+
+export interface ComponnentsTab3 extends Schema.Component {
+  collectionName: 'components_componnents_tab_3s';
+  info: {
+    displayName: 'Tab 3';
+    icon: 'moon';
+    description: '';
+  };
+  attributes: {
+    tab_name_c: Attribute.String;
+    Tab_description_c: Attribute.String;
+    Tab_main_image_c: Attribute.Media;
+    Tab_secondery_image_c: Attribute.Media;
+  };
+}
+
+export interface ComponnentsTab4 extends Schema.Component {
+  collectionName: 'components_componnents_tab_4s';
+  info: {
+    displayName: 'Tab 4';
+    icon: 'crown';
+    description: '';
+  };
+  attributes: {
+    tab_name_d: Attribute.String;
+    tab_title_d: Attribute.String;
+    tab_description_c: Attribute.Text;
+    tab_main_image_c: Attribute.Media;
+    tab_secondery_image_c: Attribute.Media;
+  };
+}
+
 export interface ComponnentsZone extends Schema.Component {
   collectionName: 'components_componnents_zones';
   info: {
@@ -43,6 +112,10 @@ declare module '@strapi/types' {
     export interface Components {
       'componnents.comp1': ComponnentsComp1;
       'componnents.post-content': ComponnentsPostContent;
+      'componnents.tab-1': ComponnentsTab1;
+      'componnents.tab-2': ComponnentsTab2;
+      'componnents.tab-3': ComponnentsTab3;
+      'componnents.tab-4': ComponnentsTab4;
       'componnents.zone': ComponnentsZone;
     }
   }
