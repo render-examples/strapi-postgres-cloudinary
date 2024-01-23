@@ -2,7 +2,8 @@
   "collectionName": "components_componnents_apartments",
   "info": {
     "displayName": "Apartment",
-    "icon": "house"
+    "icon": "house",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,11 +11,12 @@
       "type": "string"
     },
     "Apartment_image_galerry": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Model_code_label__c": {
       "type": "string"
@@ -23,11 +25,12 @@
       "type": "text"
     },
     "Sketch_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Apartment_type__c": {
       "type": "string"
@@ -40,6 +43,11 @@
     },
     "Apartment_sqm_c": {
       "type": "string"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brand.brand"
     }
   }
 }

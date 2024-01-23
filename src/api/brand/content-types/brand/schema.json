@@ -74,6 +74,18 @@
       "relation": "oneToMany",
       "target": "api::tag.tag",
       "mappedBy": "brand"
+    },
+    "tabs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tab.tab",
+      "mappedBy": "brand"
+    },
+    "apartments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::apartment.apartment",
+      "mappedBy": "brand"
     }
   }
 }

@@ -688,6 +688,11 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
   };
   attributes: {
     rooms: Attribute.DynamicZone<['componnents.apartment']>;
+    brand: Attribute.Relation<
+      'api::apartment.apartment',
+      'manyToOne',
+      'api::brand.brand'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -772,6 +777,12 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Secondary_featured_image: Attribute.Media;
     Main_logo: Attribute.Media;
     tags: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tag.tag'>;
+    tabs: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tab.tab'>;
+    apartments: Attribute.Relation<
+      'api::brand.brand',
+      'oneToMany',
+      'api::apartment.apartment'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -982,6 +993,7 @@ export interface ApiTabTab extends Schema.CollectionType {
         'componnents.tab-4'
       ]
     >;
+    brand: Attribute.Relation<'api::tab.tab', 'manyToOne', 'api::brand.brand'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

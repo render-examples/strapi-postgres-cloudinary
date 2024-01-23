@@ -5,6 +5,7 @@ export interface ComponnentsApartment extends Schema.Component {
   info: {
     displayName: 'Apartment';
     icon: 'house';
+    description: '';
   };
   attributes: {
     Number_of_rooms__c: Attribute.String;
@@ -16,6 +17,11 @@ export interface ComponnentsApartment extends Schema.Component {
     Floor_numbers: Attribute.String;
     Total_balcony_sqm__c: Attribute.String;
     Apartment_sqm_c: Attribute.String;
+    brand: Attribute.Relation<
+      'componnents.apartment',
+      'oneToOne',
+      'api::brand.brand'
+    >;
   };
 }
 
@@ -60,6 +66,11 @@ export interface ComponnentsTab1 extends Schema.Component {
     tab_image: Attribute.Media;
     Tab_galery_a: Attribute.Media;
     Secondery_image_a: Attribute.Media;
+    brand: Attribute.Relation<
+      'componnents.tab-1',
+      'oneToOne',
+      'api::brand.brand'
+    >;
   };
 }
 
@@ -81,6 +92,11 @@ export interface ComponnentsTab2 extends Schema.Component {
     featured_title_3_b: Attribute.String;
     featured_description_3_b: Attribute.String;
     Tab_galery_b: Attribute.Media;
+    brand: Attribute.Relation<
+      'componnents.tab-2',
+      'oneToOne',
+      'api::brand.brand'
+    >;
   };
 }
 
@@ -96,6 +112,11 @@ export interface ComponnentsTab3 extends Schema.Component {
     Tab_description_c: Attribute.String;
     Tab_main_image_c: Attribute.Media;
     Tab_secondery_image_c: Attribute.Media;
+    brand: Attribute.Relation<
+      'componnents.tab-3',
+      'oneToOne',
+      'api::brand.brand'
+    >;
   };
 }
 
@@ -112,6 +133,11 @@ export interface ComponnentsTab4 extends Schema.Component {
     tab_description_c: Attribute.Text;
     tab_main_image_c: Attribute.Media;
     tab_secondery_image_c: Attribute.Media;
+    brand: Attribute.Relation<
+      'componnents.tab-4',
+      'oneToOne',
+      'api::brand.brand'
+    >;
   };
 }
 
