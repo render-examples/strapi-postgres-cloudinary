@@ -1,5 +1,24 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface ComponnentsApartment extends Schema.Component {
+  collectionName: 'components_componnents_apartments';
+  info: {
+    displayName: 'Apartment';
+    icon: 'house';
+  };
+  attributes: {
+    Number_of_rooms__c: Attribute.String;
+    Apartment_image_galerry: Attribute.Media;
+    Model_code_label__c: Attribute.String;
+    Description_c: Attribute.Text;
+    Sketch_image: Attribute.Media;
+    Apartment_type__c: Attribute.String;
+    Floor_numbers: Attribute.String;
+    Total_balcony_sqm__c: Attribute.String;
+    Apartment_sqm_c: Attribute.String;
+  };
+}
+
 export interface ComponnentsComp1 extends Schema.Component {
   collectionName: 'components_componnents_comp1s';
   info: {
@@ -110,6 +129,7 @@ export interface ComponnentsZone extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'componnents.apartment': ComponnentsApartment;
       'componnents.comp1': ComponnentsComp1;
       'componnents.post-content': ComponnentsPostContent;
       'componnents.tab-1': ComponnentsTab1;

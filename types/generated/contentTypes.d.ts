@@ -676,6 +676,36 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiApartmentApartment extends Schema.CollectionType {
+  collectionName: 'apartments';
+  info: {
+    singularName: 'apartment';
+    pluralName: 'apartments';
+    displayName: 'Apartment';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    rooms: Attribute.DynamicZone<['componnents.apartment']>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::apartment.apartment',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::apartment.apartment',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiAuthorAuthor extends Schema.CollectionType {
   collectionName: 'authors';
   info: {
@@ -742,7 +772,6 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Secondary_featured_image: Attribute.Media;
     Main_logo: Attribute.Media;
     tags: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tag.tag'>;
-    tabs: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tab.tab'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1009,6 +1038,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::apartment.apartment': ApiApartmentApartment;
       'api::author.author': ApiAuthorAuthor;
       'api::brand.brand': ApiBrandBrand;
       'api::post.post': ApiPostPost;

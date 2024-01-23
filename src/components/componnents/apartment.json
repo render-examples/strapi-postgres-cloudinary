@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_componnents_apartments",
+  "info": {
+    "displayName": "Apartment",
+    "icon": "house"
+  },
+  "options": {},
+  "attributes": {
+    "Number_of_rooms__c": {
+      "type": "string"
+    },
+    "Apartment_image_galerry": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Model_code_label__c": {
+      "type": "string"
+    },
+    "Description_c": {
+      "type": "text"
+    },
+    "Sketch_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Apartment_type__c": {
+      "type": "string"
+    },
+    "Floor_numbers": {
+      "type": "string"
+    },
+    "Total_balcony_sqm__c": {
+      "type": "string"
+    },
+    "Apartment_sqm_c": {
+      "type": "string"
+    }
+  }
+}
