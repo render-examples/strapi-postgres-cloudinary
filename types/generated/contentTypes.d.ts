@@ -742,6 +742,7 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Secondary_featured_image: Attribute.Media;
     Main_logo: Attribute.Media;
     tags: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tag.tag'>;
+    tabs: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tab.tab'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
