@@ -13,9 +13,7 @@
   "attributes": {
     "rooms": {
       "type": "dynamiczone",
-      "components": [
-        "componnents.apartment"
-      ]
+      "components": []
     },
     "brand": {
       "type": "relation",

@@ -687,7 +687,7 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    rooms: Attribute.DynamicZone<['componnents.apartment']>;
+    rooms: Attribute.DynamicZone<[]>;
     brand: Attribute.Relation<
       'api::apartment.apartment',
       'manyToOne',
@@ -917,12 +917,31 @@ export interface ApiPropertyProperty extends Schema.CollectionType {
     singularName: 'property';
     pluralName: 'properties';
     displayName: 'Property';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Internal_Property_ID__c: Attribute.String;
+    Number_of_rooms__c: Attribute.String;
+    Apartment_image_galerry: Attribute.Media;
+    Model_code_label__c: Attribute.String;
+    Description_c: Attribute.Text;
+    Sketch_image: Attribute.Media;
+    Apartment_type__c: Attribute.String;
+    Floor_numbers: Attribute.String;
+    Total_balcony_sqm__c: Attribute.String;
+    Apartment_sqm_c: Attribute.String;
+    brand: Attribute.Relation<
+      'api::property.property',
+      'oneToOne',
+      'api::brand.brand'
+    >;
+    tags: Attribute.Relation<
+      'api::property.property',
+      'oneToMany',
+      'api::tag.tag'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1024,6 +1043,11 @@ export interface ApiTagTag extends Schema.CollectionType {
       'api::project.project'
     >;
     brand: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::brand.brand'>;
+    property: Attribute.Relation<
+      'api::tag.tag',
+      'manyToOne',
+      'api::property.property'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

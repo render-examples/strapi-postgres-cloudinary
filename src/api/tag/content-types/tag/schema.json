@@ -34,6 +34,12 @@
       "relation": "manyToOne",
       "target": "api::brand.brand",
       "inversedBy": "tags"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property.property",
+      "inversedBy": "tags"
     }
   }
 }
