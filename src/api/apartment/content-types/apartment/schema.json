@@ -60,9 +60,9 @@
       "relation": "oneToOne",
       "target": "api::brand.brand"
     },
-    "building": {
+    "buildings": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::building.building",
       "inversedBy": "apartments"
     }

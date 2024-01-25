@@ -18,16 +18,16 @@
     "Building_status": {
       "type": "string"
     },
-    "apartments": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::apartment.apartment",
-      "mappedBy": "building"
-    },
     "brand": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::brand.brand"
+    },
+    "apartments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::apartment.apartment",
+      "mappedBy": "buildings"
     }
   }
 }

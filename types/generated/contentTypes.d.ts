@@ -707,9 +707,9 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
       'oneToOne',
       'api::brand.brand'
     >;
-    building: Attribute.Relation<
+    buildings: Attribute.Relation<
       'api::apartment.apartment',
-      'manyToOne',
+      'manyToMany',
       'api::building.building'
     >;
     createdAt: Attribute.DateTime;
@@ -837,15 +837,15 @@ export interface ApiBuildingBuilding extends Schema.CollectionType {
   attributes: {
     Building_name: Attribute.String;
     Building_status: Attribute.String;
-    apartments: Attribute.Relation<
-      'api::building.building',
-      'oneToMany',
-      'api::apartment.apartment'
-    >;
     brand: Attribute.Relation<
       'api::building.building',
       'oneToOne',
       'api::brand.brand'
+    >;
+    apartments: Attribute.Relation<
+      'api::building.building',
+      'manyToMany',
+      'api::apartment.apartment'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
