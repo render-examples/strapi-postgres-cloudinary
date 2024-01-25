@@ -19,11 +19,12 @@
       "type": "string"
     },
     "Apartment_image_galerry": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Model_Code_Label__c": {
       "type": "string"
@@ -35,11 +36,12 @@
       "mappedBy": "apartment"
     },
     "sketch_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Apartment_type__c": {
       "type": "string"
@@ -52,6 +54,11 @@
     },
     "Apartment_sqm_c": {
       "type": "string"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brand.brand"
     }
   }
 }

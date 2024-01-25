@@ -702,6 +702,11 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
     Floor_numbers: Attribute.String;
     Total_Balcony_Sqm__c: Attribute.String;
     Apartment_sqm_c: Attribute.String;
+    brand: Attribute.Relation<
+      'api::apartment.apartment',
+      'oneToOne',
+      'api::brand.brand'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

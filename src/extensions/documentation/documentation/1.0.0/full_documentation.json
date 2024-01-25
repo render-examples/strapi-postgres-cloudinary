@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-01-25T00:02:05.329Z"
+    "x-generation-date": "2024-01-25T00:18:30.267Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -151,6 +151,17 @@
               },
               "Apartment_sqm_c": {
                 "type": "string"
+              },
+              "brand": {
+                "oneOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": "string or id"
               }
             }
           }
@@ -6364,6 +6375,23 @@
                                     "Apartment_sqm_c": {
                                       "type": "string"
                                     },
+                                    "brand": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "attributes": {
+                                              "type": "object",
+                                              "properties": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -6619,6 +6647,23 @@
           },
           "Apartment_sqm_c": {
             "type": "string"
+          },
+          "brand": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "attributes": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
           },
           "createdAt": {
             "type": "string",
@@ -12896,6 +12941,23 @@
                                                   },
                                                   "Apartment_sqm_c": {
                                                     "type": "string"
+                                                  },
+                                                  "brand": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "data": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "id": {
+                                                            "type": "number"
+                                                          },
+                                                          "attributes": {
+                                                            "type": "object",
+                                                            "properties": {}
+                                                          }
+                                                        }
+                                                      }
+                                                    }
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -19881,6 +19943,23 @@
                                     "Apartment_sqm_c": {
                                       "type": "string"
                                     },
+                                    "brand": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "attributes": {
+                                              "type": "object",
+                                              "properties": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -26220,6 +26299,23 @@
                                                               },
                                                               "Apartment_sqm_c": {
                                                                 "type": "string"
+                                                              },
+                                                              "brand": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                  "data": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "id": {
+                                                                        "type": "number"
+                                                                      },
+                                                                      "attributes": {
+                                                                        "type": "object",
+                                                                        "properties": {}
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -33460,6 +33556,23 @@
                                     },
                                     "Apartment_sqm_c": {
                                       "type": "string"
+                                    },
+                                    "brand": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "attributes": {
+                                              "type": "object",
+                                              "properties": {}
+                                            }
+                                          }
+                                        }
+                                      }
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -42265,6 +42378,23 @@
                                                 },
                                                 "Apartment_sqm_c": {
                                                   "type": "string"
+                                                },
+                                                "brand": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "data": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "id": {
+                                                          "type": "number"
+                                                        },
+                                                        "attributes": {
+                                                          "type": "object",
+                                                          "properties": {}
+                                                        }
+                                                      }
+                                                    }
+                                                  }
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
