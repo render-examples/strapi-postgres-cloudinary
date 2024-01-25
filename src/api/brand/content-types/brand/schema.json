@@ -80,6 +80,42 @@
       "relation": "oneToMany",
       "target": "api::tab.tab",
       "mappedBy": "brand"
+    },
+    "Surrounding_description": {
+      "type": "text"
+    },
+    "Surrounding_image_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Surrounding_title_1": {
+      "type": "string"
+    },
+    "Surrounding_image_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Surrounding_title_2": {
+      "type": "string"
+    },
+    "Surrounding_image_3": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Surrounding_title_3": {
+      "type": "string"
+    },
+    "Street__c": {
+      "type": "string"
     }
   }
 }

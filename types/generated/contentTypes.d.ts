@@ -797,6 +797,14 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Main_logo: Attribute.Media;
     tags: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tag.tag'>;
     tabs: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tab.tab'>;
+    Surrounding_description: Attribute.Text;
+    Surrounding_image_1: Attribute.Media;
+    Surrounding_title_1: Attribute.String;
+    Surrounding_image_2: Attribute.Media;
+    Surrounding_title_2: Attribute.String;
+    Surrounding_image_3: Attribute.Media;
+    Surrounding_title_3: Attribute.String;
+    Street__c: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
