@@ -707,6 +707,11 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
       'oneToOne',
       'api::brand.brand'
     >;
+    building: Attribute.Relation<
+      'api::apartment.apartment',
+      'manyToOne',
+      'api::building.building'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -803,6 +808,48 @@ export interface ApiBrandBrand extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::brand.brand',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiBuildingBuilding extends Schema.CollectionType {
+  collectionName: 'buildings';
+  info: {
+    singularName: 'building';
+    pluralName: 'buildings';
+    displayName: 'building';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Building_name: Attribute.String;
+    Building_status: Attribute.String;
+    apartments: Attribute.Relation<
+      'api::building.building',
+      'oneToMany',
+      'api::apartment.apartment'
+    >;
+    brand: Attribute.Relation<
+      'api::building.building',
+      'oneToOne',
+      'api::brand.brand'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::building.building',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::building.building',
       'oneToOne',
       'admin::user'
     > &
@@ -1037,6 +1084,7 @@ declare module '@strapi/types' {
       'api::apartment.apartment': ApiApartmentApartment;
       'api::author.author': ApiAuthorAuthor;
       'api::brand.brand': ApiBrandBrand;
+      'api::building.building': ApiBuildingBuilding;
       'api::post.post': ApiPostPost;
       'api::project.project': ApiProjectProject;
       'api::shop.shop': ApiShopShop;
