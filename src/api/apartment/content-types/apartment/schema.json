@@ -4,22 +4,54 @@
   "info": {
     "singularName": "apartment",
     "pluralName": "apartments",
-    "displayName": "Apartment"
+    "displayName": "Apartment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "rooms": {
-      "type": "dynamiczone",
-      "components": []
+    "Description_c": {
+      "type": "text"
     },
-    "brand": {
+    "Number_of_Rooms__c": {
+      "type": "string"
+    },
+    "Apartment_image_galerry": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Model_Code_Label__c": {
+      "type": "string"
+    },
+    "tags": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::brand.brand",
-      "inversedBy": "apartments"
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "apartment"
+    },
+    "sketch_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Apartment_type__c": {
+      "type": "string"
+    },
+    "Floor_numbers": {
+      "type": "string"
+    },
+    "Total_Balcony_Sqm__c": {
+      "type": "string"
+    },
+    "Apartment_sqm_c": {
+      "type": "string"
     }
   }
 }

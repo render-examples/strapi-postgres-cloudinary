@@ -35,10 +35,10 @@
       "target": "api::brand.brand",
       "inversedBy": "tags"
     },
-    "property": {
+    "apartment": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::property.property",
+      "target": "api::apartment.apartment",
       "inversedBy": "tags"
     }
   }

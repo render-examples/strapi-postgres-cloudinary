@@ -682,17 +682,26 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
     singularName: 'apartment';
     pluralName: 'apartments';
     displayName: 'Apartment';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    rooms: Attribute.DynamicZone<[]>;
-    brand: Attribute.Relation<
+    Description_c: Attribute.Text;
+    Number_of_Rooms__c: Attribute.String;
+    Apartment_image_galerry: Attribute.Media;
+    Model_Code_Label__c: Attribute.String;
+    tags: Attribute.Relation<
       'api::apartment.apartment',
-      'manyToOne',
-      'api::brand.brand'
+      'oneToMany',
+      'api::tag.tag'
     >;
+    sketch_image: Attribute.Media;
+    Apartment_type__c: Attribute.String;
+    Floor_numbers: Attribute.String;
+    Total_Balcony_Sqm__c: Attribute.String;
+    Apartment_sqm_c: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -778,11 +787,6 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Main_logo: Attribute.Media;
     tags: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tag.tag'>;
     tabs: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tab.tab'>;
-    apartments: Attribute.Relation<
-      'api::brand.brand',
-      'oneToMany',
-      'api::apartment.apartment'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -911,55 +915,6 @@ export interface ApiProjectProject extends Schema.CollectionType {
   };
 }
 
-export interface ApiPropertyProperty extends Schema.CollectionType {
-  collectionName: 'properties';
-  info: {
-    singularName: 'property';
-    pluralName: 'properties';
-    displayName: 'Property';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Number_of_rooms__c: Attribute.String;
-    Apartment_image_galerry: Attribute.Media;
-    Model_code_label__c: Attribute.String;
-    Description_c: Attribute.Text;
-    Sketch_image: Attribute.Media;
-    Apartment_type__c: Attribute.String;
-    Floor_numbers: Attribute.String;
-    Total_balcony_sqm__c: Attribute.String;
-    Apartment_sqm_c: Attribute.String;
-    brand: Attribute.Relation<
-      'api::property.property',
-      'oneToOne',
-      'api::brand.brand'
-    >;
-    tags: Attribute.Relation<
-      'api::property.property',
-      'oneToMany',
-      'api::tag.tag'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::property.property',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::property.property',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiShopShop extends Schema.CollectionType {
   collectionName: 'shops';
   info: {
@@ -1043,10 +998,10 @@ export interface ApiTagTag extends Schema.CollectionType {
       'api::project.project'
     >;
     brand: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::brand.brand'>;
-    property: Attribute.Relation<
+    apartment: Attribute.Relation<
       'api::tag.tag',
       'manyToOne',
-      'api::property.property'
+      'api::apartment.apartment'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1079,7 +1034,6 @@ declare module '@strapi/types' {
       'api::brand.brand': ApiBrandBrand;
       'api::post.post': ApiPostPost;
       'api::project.project': ApiProjectProject;
-      'api::property.property': ApiPropertyProperty;
       'api::shop.shop': ApiShopShop;
       'api::tab.tab': ApiTabTab;
       'api::tag.tag': ApiTagTag;
