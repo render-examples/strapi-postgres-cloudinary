@@ -1019,15 +1019,50 @@ export interface ApiTabTab extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Tab_a: Attribute.DynamicZone<
-      [
-        'componnents.tab-1',
-        'componnents.tab-2',
-        'componnents.tab-3',
-        'componnents.tab-4'
-      ]
-    >;
     brand: Attribute.Relation<'api::tab.tab', 'manyToOne', 'api::brand.brand'>;
+    tab_name_type_a: Attribute.String;
+    Tab_subtitle_a: Attribute.String;
+    Tab_description_a: Attribute.Text;
+    tab_image: Attribute.Media;
+    Tab_galery_a: Attribute.Media;
+    Secondery_image_a: Attribute.Media;
+    tab_name_type_b: Attribute.String;
+    featured_title_1_b: Attribute.String;
+    featured_description_1_b: Attribute.Text;
+    featured_icon_2_2_b: Attribute.Media;
+    featured_title_2_b: Attribute.String;
+    featured_description_2_b: Attribute.Text;
+    featured_icon_3_b: Attribute.Media;
+    featured_title_3_b: Attribute.String;
+    featured_description_3_b: Attribute.Text;
+    Tab_galery_b: Attribute.Media;
+    tab_name_c: Attribute.String;
+    Tab_description_c: Attribute.String;
+    Tab_main_image_c: Attribute.Media;
+    Tab_secondery_image_c: Attribute.Media;
+    tab_type_d: Attribute.String;
+    tab_name_d: Attribute.String;
+    tab_title_d: Attribute.String;
+    tab_title_bold_d: Attribute.String;
+    tab_subtitle_d: Attribute.String;
+    tab_description_d: Attribute.String;
+    featured_image_d: Attribute.Media;
+    featured_small_image_d: Attribute.Media;
+    tab_type_e: Attribute.String;
+    tab_name_e: Attribute.String;
+    tab_title_e: Attribute.String;
+    tab_title_bold_e: Attribute.String;
+    tab_subtitle_e: Attribute.String;
+    tab_bollet_1: Attribute.String;
+    tab_bollet_2: Attribute.String;
+    tab_bollet_3: Attribute.String;
+    tab_bollet_4: Attribute.String;
+    tab_bollet_5: Attribute.String;
+    tab_bollet_6: Attribute.String;
+    tab_bollet_7: Attribute.String;
+    tab_bollet_8: Attribute.String;
+    tab_bollet_9: Attribute.String;
+    featured_image_e: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
