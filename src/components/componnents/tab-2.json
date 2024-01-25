@@ -51,11 +51,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "brand": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::brand.brand"
     }
   }
 }
