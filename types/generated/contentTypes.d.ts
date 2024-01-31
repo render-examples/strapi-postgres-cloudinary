@@ -709,7 +709,7 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
     >;
     buildings: Attribute.Relation<
       'api::apartment.apartment',
-      'manyToMany',
+      'oneToMany',
       'api::building.building'
     >;
     createdAt: Attribute.DateTime;
@@ -805,6 +805,12 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Surrounding_image_3: Attribute.Media;
     Surrounding_title_3: Attribute.String;
     Street__c: Attribute.String;
+    Sidebar_logo: Attribute.Media;
+    buildings: Attribute.Relation<
+      'api::brand.brand',
+      'oneToMany',
+      'api::building.building'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -839,12 +845,12 @@ export interface ApiBuildingBuilding extends Schema.CollectionType {
     Building_status: Attribute.String;
     brand: Attribute.Relation<
       'api::building.building',
-      'oneToOne',
+      'manyToOne',
       'api::brand.brand'
     >;
-    apartments: Attribute.Relation<
+    apartment: Attribute.Relation<
       'api::building.building',
-      'manyToMany',
+      'manyToOne',
       'api::apartment.apartment'
     >;
     createdAt: Attribute.DateTime;
@@ -1053,14 +1059,14 @@ export interface ApiTabTab extends Schema.CollectionType {
     tab_title_e: Attribute.String;
     tab_title_bold_e: Attribute.String;
     tab_subtitle_e: Attribute.String;
-    tab_bollet_1: Attribute.String;
-    tab_bollet_2: Attribute.String;
-    tab_bollet_3: Attribute.String;
-    tab_bollet_4: Attribute.String;
-    tab_bollet_5: Attribute.String;
-    tab_bollet_6: Attribute.String;
-    tab_bollet_7: Attribute.String;
-    tab_bollet_8: Attribute.String;
+    tab_bollet_1_e: Attribute.String;
+    tab_bollet_2_e: Attribute.String;
+    tab_bollet_3_e: Attribute.String;
+    tab_bollet_4_e: Attribute.String;
+    tab_bollet_5_e: Attribute.String;
+    tab_bollet_6_e: Attribute.String;
+    tab_bollet_7_e: Attribute.String;
+    tab_bollet_8_e: Attribute.String;
     tab_bollet_9: Attribute.String;
     featured_image_e: Attribute.Media;
     createdAt: Attribute.DateTime;

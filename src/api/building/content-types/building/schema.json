@@ -20,14 +20,15 @@
     },
     "brand": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::brand.brand"
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "buildings"
     },
-    "apartments": {
+    "apartment": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::apartment.apartment",
-      "mappedBy": "buildings"
+      "inversedBy": "buildings"
     }
   }
 }

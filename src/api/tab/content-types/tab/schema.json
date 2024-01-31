@@ -28,28 +28,31 @@
       "type": "text"
     },
     "tab_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Tab_galery_a": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Secondery_image_a": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "tab_name_type_b": {
       "type": "string"
@@ -61,11 +64,12 @@
       "type": "text"
     },
     "featured_icon_2_2_b": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "featured_title_2_b": {
       "type": "string"
@@ -74,11 +78,12 @@
       "type": "text"
     },
     "featured_icon_3_b": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "featured_title_3_b": {
       "type": "string"
@@ -87,11 +92,12 @@
       "type": "text"
     },
     "Tab_galery_b": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "tab_name_c": {
       "type": "string"
@@ -100,18 +106,20 @@
       "type": "string"
     },
     "Tab_main_image_c": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Tab_secondery_image_c": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "tab_type_d": {
       "type": "string"
@@ -132,18 +140,20 @@
       "type": "string"
     },
     "featured_image_d": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "featured_small_image_d": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "tab_type_e": {
       "type": "string"
@@ -160,39 +170,40 @@
     "tab_subtitle_e": {
       "type": "string"
     },
-    "tab_bollet_1": {
+    "tab_bollet_1_e": {
       "type": "string"
     },
-    "tab_bollet_2": {
+    "tab_bollet_2_e": {
       "type": "string"
     },
-    "tab_bollet_3": {
+    "tab_bollet_3_e": {
       "type": "string"
     },
-    "tab_bollet_4": {
+    "tab_bollet_4_e": {
       "type": "string"
     },
-    "tab_bollet_5": {
+    "tab_bollet_5_e": {
       "type": "string"
     },
-    "tab_bollet_6": {
+    "tab_bollet_6_e": {
       "type": "string"
     },
-    "tab_bollet_7": {
+    "tab_bollet_7_e": {
       "type": "string"
     },
-    "tab_bollet_8": {
+    "tab_bollet_8_e": {
       "type": "string"
     },
     "tab_bollet_9": {
       "type": "string"
     },
     "featured_image_e": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

@@ -85,37 +85,56 @@
       "type": "text"
     },
     "Surrounding_image_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Surrounding_title_1": {
       "type": "string"
     },
     "Surrounding_image_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Surrounding_title_2": {
       "type": "string"
     },
     "Surrounding_image_3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Surrounding_title_3": {
       "type": "string"
     },
     "Street__c": {
       "type": "string"
+    },
+    "Sidebar_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "buildings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::building.building",
+      "mappedBy": "brand"
     }
   }
 }
