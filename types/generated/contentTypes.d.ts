@@ -1077,7 +1077,6 @@ export interface ApiTabTab extends Schema.CollectionType {
     tab_bollet_8_e: Attribute.String;
     tab_bollet_9: Attribute.String;
     featured_image_e: Attribute.Media;
-    brand: Attribute.Relation<'api::tab.tab', 'oneToOne', 'api::brand.brand'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
