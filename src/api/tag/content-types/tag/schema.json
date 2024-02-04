@@ -23,22 +23,16 @@
       "target": "api::post.post",
       "inversedBy": "tags"
     },
-    "projects": {
+    "project": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::project.project",
-      "mappedBy": "tags"
+      "inversedBy": "tags"
     },
     "brand": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::brand.brand",
-      "inversedBy": "tags"
-    },
-    "apartment": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::apartment.apartment",
       "inversedBy": "tags"
     }
   }

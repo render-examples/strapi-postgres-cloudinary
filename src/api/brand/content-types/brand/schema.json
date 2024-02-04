@@ -124,12 +124,6 @@
       "type": "media",
       "multiple": false
     },
-    "buildings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::building.building",
-      "mappedBy": "brand"
-    },
     "tab_name_type_a": {
       "pluginOptions": {
         "i18n": {

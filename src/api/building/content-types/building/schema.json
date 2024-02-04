@@ -18,17 +18,19 @@
     "Building_status": {
       "type": "string"
     },
+    "SF_id": {
+      "type": "string"
+    },
     "brand": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::brand.brand",
-      "inversedBy": "buildings"
+      "relation": "oneToOne",
+      "target": "api::brand.brand"
     },
-    "apartment": {
+    "apartments": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::apartment.apartment",
-      "inversedBy": "buildings"
+      "mappedBy": "building"
     }
   }
 }

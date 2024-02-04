@@ -692,11 +692,6 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
     Number_of_Rooms__c: Attribute.String;
     Apartment_image_galerry: Attribute.Media;
     Model_Code_Label__c: Attribute.String;
-    tags: Attribute.Relation<
-      'api::apartment.apartment',
-      'oneToMany',
-      'api::tag.tag'
-    >;
     sketch_image: Attribute.Media;
     Apartment_type__c: Attribute.String;
     Floor_numbers: Attribute.String;
@@ -707,9 +702,9 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
       'oneToOne',
       'api::brand.brand'
     >;
-    buildings: Attribute.Relation<
+    building: Attribute.Relation<
       'api::apartment.apartment',
-      'oneToMany',
+      'manyToOne',
       'api::building.building'
     >;
     createdAt: Attribute.DateTime;
@@ -805,11 +800,6 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Surrounding_title_3: Attribute.String;
     Street__c: Attribute.String;
     Sidebar_logo: Attribute.Media;
-    buildings: Attribute.Relation<
-      'api::brand.brand',
-      'oneToMany',
-      'api::building.building'
-    >;
     tab_name_type_a: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -890,14 +880,15 @@ export interface ApiBuildingBuilding extends Schema.CollectionType {
   attributes: {
     Building_name: Attribute.String;
     Building_status: Attribute.String;
+    SF_id: Attribute.String;
     brand: Attribute.Relation<
       'api::building.building',
-      'manyToOne',
+      'oneToOne',
       'api::brand.brand'
     >;
-    apartment: Attribute.Relation<
+    apartments: Attribute.Relation<
       'api::building.building',
-      'manyToOne',
+      'oneToMany',
       'api::apartment.apartment'
     >;
     createdAt: Attribute.DateTime;
@@ -973,11 +964,6 @@ export interface ApiProjectProject extends Schema.CollectionType {
     Main_featured_image: Attribute.Media;
     Secondary_featured_image: Attribute.Media;
     Main_logo: Attribute.Media;
-    tags: Attribute.Relation<
-      'api::project.project',
-      'manyToMany',
-      'api::tag.tag'
-    >;
     buildings: Attribute.String;
     floors: Attribute.String;
     Apartments: Attribute.String;
@@ -1010,6 +996,11 @@ export interface ApiProjectProject extends Schema.CollectionType {
     Surrounding_title_2: Attribute.String;
     Surrounding_image_3: Attribute.Media;
     Surrounding_title_3: Attribute.String;
+    tags: Attribute.Relation<
+      'api::project.project',
+      'oneToMany',
+      'api::tag.tag'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1125,6 +1116,7 @@ export interface ApiTabTab extends Schema.CollectionType {
     tab_bollet_8_e: Attribute.String;
     tab_bollet_9: Attribute.String;
     featured_image_e: Attribute.Media;
+    brand: Attribute.Relation<'api::tab.tab', 'oneToOne', 'api::brand.brand'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1155,17 +1147,12 @@ export interface ApiTagTag extends Schema.CollectionType {
   attributes: {
     tag: Attribute.String & Attribute.Required & Attribute.Unique;
     post: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::post.post'>;
-    projects: Attribute.Relation<
+    project: Attribute.Relation<
       'api::tag.tag',
-      'manyToMany',
+      'manyToOne',
       'api::project.project'
     >;
     brand: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::brand.brand'>;
-    apartment: Attribute.Relation<
-      'api::tag.tag',
-      'manyToOne',
-      'api::apartment.apartment'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -69,12 +69,6 @@
         "videos"
       ]
     },
-    "tags": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tag.tag",
-      "inversedBy": "projects"
-    },
     "buildings": {
       "type": "string"
     },
@@ -242,6 +236,12 @@
     },
     "Surrounding_title_3": {
       "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "project"
     }
   }
 }

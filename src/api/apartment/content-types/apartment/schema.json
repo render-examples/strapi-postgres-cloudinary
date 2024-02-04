@@ -29,12 +29,6 @@
     "Model_Code_Label__c": {
       "type": "string"
     },
-    "tags": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tag.tag",
-      "mappedBy": "apartment"
-    },
     "sketch_image": {
       "type": "media",
       "multiple": false,
@@ -60,11 +54,11 @@
       "relation": "oneToOne",
       "target": "api::brand.brand"
     },
-    "buildings": {
+    "building": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::building.building",
-      "mappedBy": "apartment"
+      "inversedBy": "apartments"
     }
   }
 }
