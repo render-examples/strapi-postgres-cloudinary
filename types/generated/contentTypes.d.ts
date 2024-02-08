@@ -882,6 +882,7 @@ export interface ApiPostPost extends Schema.CollectionType {
       'api::author.author'
     >;
     tags: Attribute.Relation<'api::post.post', 'oneToMany', 'api::tag.tag'>;
+    Markdown: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -41,6 +41,9 @@
       "relation": "oneToMany",
       "target": "api::tag.tag",
       "mappedBy": "post"
+    },
+    "Markdown": {
+      "type": "richtext"
     }
   }
 }

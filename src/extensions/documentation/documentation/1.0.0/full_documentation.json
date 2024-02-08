@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-02-05T15:07:01.117Z"
+    "x-generation-date": "2024-02-08T09:54:28.750Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6385,6 +6385,9 @@
                             }
                           }
                         },
+                        "Markdown": {
+                          "type": "string"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -10824,6 +10827,9 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "Markdown": {
+                "type": "string"
               }
             }
           }
@@ -14327,6 +14333,9 @@
                                         }
                                       }
                                     },
+                                    "Markdown": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -14464,6 +14473,9 @@
                 }
               }
             }
+          },
+          "Markdown": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -18106,6 +18118,9 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "Markdown": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -29007,6 +29022,9 @@
                             }
                           }
                         }
+                      },
+                      "Markdown": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
