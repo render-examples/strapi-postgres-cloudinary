@@ -1071,6 +1071,12 @@ export interface ApiTabTab extends Schema.CollectionType {
     tab_bollet_9: Attribute.String;
     featured_image_e: Attribute.Media;
     brand: Attribute.Relation<'api::tab.tab', 'oneToOne', 'api::brand.brand'>;
+    Tab_type: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -212,6 +212,14 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::brand.brand"
+    },
+    "Tab_type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
