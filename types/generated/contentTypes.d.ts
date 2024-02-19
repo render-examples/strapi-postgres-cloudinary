@@ -799,6 +799,8 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Surrounding_title_3: Attribute.String;
     Street__c: Attribute.String;
     Sidebar_logo: Attribute.Media;
+    Main_title_bold: Attribute.String;
+    rooms: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -118,6 +118,12 @@
         "videos",
         "audios"
       ]
+    },
+    "Main_title_bold": {
+      "type": "string"
+    },
+    "rooms": {
+      "type": "string"
     }
   }
 }
