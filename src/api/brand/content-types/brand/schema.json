@@ -124,6 +124,15 @@
     },
     "rooms": {
       "type": "string"
+    },
+    "Apartment_section_title": {
+      "type": "string"
+    },
+    "Apartment_section_title_bold": {
+      "type": "string"
+    },
+    "Apartment_section_description": {
+      "type": "text"
     }
   }
 }

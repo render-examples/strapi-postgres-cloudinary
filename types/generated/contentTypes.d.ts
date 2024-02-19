@@ -803,6 +803,9 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Sidebar_logo: Attribute.Media;
     Main_title_bold: Attribute.String;
     rooms: Attribute.String;
+    Apartment_section_title: Attribute.String;
+    Apartment_section_title_bold: Attribute.String;
+    Apartment_section_description: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

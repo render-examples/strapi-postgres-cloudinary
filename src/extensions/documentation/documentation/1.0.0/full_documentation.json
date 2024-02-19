@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-02-19T18:17:01.817Z"
+    "x-generation-date": "2024-02-19T18:55:07.587Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2165,6 +2165,15 @@
                         "type": "string"
                       },
                       "rooms": {
+                        "type": "string"
+                      },
+                      "Apartment_section_title": {
+                        "type": "string"
+                      },
+                      "Apartment_section_title_bold": {
+                        "type": "string"
+                      },
+                      "Apartment_section_description": {
                         "type": "string"
                       },
                       "createdAt": {
@@ -6686,6 +6695,15 @@
               },
               "rooms": {
                 "type": "string"
+              },
+              "Apartment_section_title": {
+                "type": "string"
+              },
+              "Apartment_section_title_bold": {
+                "type": "string"
+              },
+              "Apartment_section_description": {
+                "type": "string"
               }
             }
           }
@@ -8375,6 +8393,15 @@
             "type": "string"
           },
           "rooms": {
+            "type": "string"
+          },
+          "Apartment_section_title": {
+            "type": "string"
+          },
+          "Apartment_section_title_bold": {
+            "type": "string"
+          },
+          "Apartment_section_description": {
             "type": "string"
           },
           "createdAt": {
@@ -10199,6 +10226,15 @@
                         "type": "string"
                       },
                       "rooms": {
+                        "type": "string"
+                      },
+                      "Apartment_section_title": {
+                        "type": "string"
+                      },
+                      "Apartment_section_title_bold": {
+                        "type": "string"
+                      },
+                      "Apartment_section_description": {
                         "type": "string"
                       },
                       "createdAt": {
@@ -22666,6 +22702,15 @@
                       "rooms": {
                         "type": "string"
                       },
+                      "Apartment_section_title": {
+                        "type": "string"
+                      },
+                      "Apartment_section_title_bold": {
+                        "type": "string"
+                      },
+                      "Apartment_section_description": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -26711,6 +26756,15 @@
                         "type": "string"
                       },
                       "rooms": {
+                        "type": "string"
+                      },
+                      "Apartment_section_title": {
+                        "type": "string"
+                      },
+                      "Apartment_section_title_bold": {
+                        "type": "string"
+                      },
+                      "Apartment_section_description": {
                         "type": "string"
                       },
                       "createdAt": {
