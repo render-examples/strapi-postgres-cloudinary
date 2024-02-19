@@ -59,6 +59,12 @@
       "relation": "manyToOne",
       "target": "api::building.building",
       "inversedBy": "apartments"
+    },
+    "Main_title": {
+      "type": "string"
+    },
+    "Main_bold_title": {
+      "type": "string"
     }
   }
 }

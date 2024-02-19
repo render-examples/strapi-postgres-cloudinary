@@ -707,6 +707,8 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
       'manyToOne',
       'api::building.building'
     >;
+    Main_title: Attribute.String;
+    Main_bold_title: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -995,6 +997,7 @@ export interface ApiShopShop extends Schema.CollectionType {
     saturday_status: Attribute.Boolean;
     Shop_opening_hours_saturday: Attribute.String;
     Shop_closing_hours_saturday: Attribute.String;
+    brand: Attribute.Relation<'api::shop.shop', 'oneToOne', 'api::brand.brand'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
