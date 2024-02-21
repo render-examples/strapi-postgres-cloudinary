@@ -29,8 +29,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "project_status": {
@@ -47,8 +46,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Secondary_featured_image": {
@@ -56,8 +54,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Main_logo": {
@@ -65,8 +62,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "buildings": {
@@ -95,8 +91,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Tab_galery_a": {
@@ -104,8 +99,7 @@
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Secondery_image_a": {
@@ -113,8 +107,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Tab_name_b": {
@@ -125,8 +118,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "featured_title_1_b": {
@@ -155,8 +147,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "featured_title_3_b": {
@@ -170,8 +161,7 @@
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "tab_name_c": {
@@ -185,8 +175,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Tab_secondery_image_c": {
@@ -194,8 +183,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Surrounding_description": {
@@ -206,8 +194,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Surrounding_title_1": {
@@ -218,8 +205,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Surrounding_title_2": {
@@ -230,8 +216,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Surrounding_title_3": {
@@ -242,6 +227,64 @@
       "relation": "oneToMany",
       "target": "api::tag.tag",
       "mappedBy": "project"
+    },
+    "Extra_text_1": {
+      "type": "string"
+    },
+    "Extra_text_2": {
+      "type": "string"
+    },
+    "Extra_text_3": {
+      "type": "string"
+    },
+    "Extra_text_4": {
+      "type": "string"
+    },
+    "Extra_text_5": {
+      "type": "string"
+    },
+    "Extra_long_text_1": {
+      "type": "text"
+    },
+    "Extra_long_text_2": {
+      "type": "text"
+    },
+    "Extra_long_text_3": {
+      "type": "text"
+    },
+    "Extra_long_text_4": {
+      "type": "text"
+    },
+    "Extra_long_text_5": {
+      "type": "text"
+    },
+    "Extra_singel_media_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Extra_singel_media_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Extra_multipale_media_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Extra_multipale_media_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

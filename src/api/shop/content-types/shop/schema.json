@@ -57,6 +57,26 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::brand.brand"
+    },
+    "Extra_multipale_media_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Extra_single_media_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Extra_text_1": {
+      "type": "string"
+    },
+    "Extra_long_text_1": {
+      "type": "text"
     }
   }
 }

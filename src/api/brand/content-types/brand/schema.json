@@ -29,8 +29,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "project_status": {
@@ -47,8 +46,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Secondary_featured_image": {
@@ -56,8 +54,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Main_logo": {
@@ -65,8 +62,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Surrounding_description": {
@@ -113,10 +109,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "Main_title_bold": {
@@ -133,6 +126,64 @@
     },
     "Apartment_section_description": {
       "type": "text"
+    },
+    "Extra_text_1": {
+      "type": "string"
+    },
+    "Extra_text_2": {
+      "type": "string"
+    },
+    "Extra_text_3": {
+      "type": "string"
+    },
+    "Extra_text_4": {
+      "type": "string"
+    },
+    "Extra_text_5": {
+      "type": "string"
+    },
+    "Extra_long_text_1": {
+      "type": "text"
+    },
+    "Extra_long_text_2": {
+      "type": "text"
+    },
+    "Extra_long_text_3": {
+      "type": "text"
+    },
+    "Extra_long_text_4": {
+      "type": "text"
+    },
+    "Extra_long_text_5": {
+      "type": "text"
+    },
+    "Extra_singel_media_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Extra_singel_media_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Extra_multipale_media_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Extra_multipale_media_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

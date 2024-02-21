@@ -709,6 +709,20 @@ export interface ApiApartmentApartment extends Schema.CollectionType {
     >;
     Main_title: Attribute.String;
     Main_bold_title: Attribute.String;
+    Extra_text_1: Attribute.String;
+    Extra_text_2: Attribute.String;
+    Extra_text_3: Attribute.String;
+    Extra_text_4: Attribute.String;
+    Extra_text_5: Attribute.String;
+    Extra_long_text_1: Attribute.Text;
+    Extra_long_text_2: Attribute.String;
+    Extra_long_text_3: Attribute.Text;
+    Extra_long_text_4: Attribute.Text;
+    Extra_long_text_5: Attribute.Text;
+    Extra_singel_media_1: Attribute.Media;
+    Extra_singel_media_2: Attribute.Media;
+    Extra_multipale_media_1: Attribute.Media;
+    Extra_multipale_media_2: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -806,6 +820,20 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Apartment_section_title: Attribute.String;
     Apartment_section_title_bold: Attribute.String;
     Apartment_section_description: Attribute.Text;
+    Extra_text_1: Attribute.String;
+    Extra_text_2: Attribute.String;
+    Extra_text_3: Attribute.String;
+    Extra_text_4: Attribute.String;
+    Extra_text_5: Attribute.String;
+    Extra_long_text_1: Attribute.Text;
+    Extra_long_text_2: Attribute.Text;
+    Extra_long_text_3: Attribute.Text;
+    Extra_long_text_4: Attribute.Text;
+    Extra_long_text_5: Attribute.Text;
+    Extra_singel_media_1: Attribute.Media;
+    Extra_singel_media_2: Attribute.Media;
+    Extra_multipale_media_1: Attribute.Media;
+    Extra_multipale_media_2: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -849,6 +877,14 @@ export interface ApiBuildingBuilding extends Schema.CollectionType {
       'oneToMany',
       'api::apartment.apartment'
     >;
+    Extra_text_1: Attribute.String;
+    Extra_text_2: Attribute.String;
+    Extra_long_text_1: Attribute.Text;
+    Extra_long_text_2: Attribute.String;
+    Extra_singel_media_1: Attribute.Media;
+    Extra_singel_media_2: Attribute.Media;
+    Extra_multipale_media_1: Attribute.Media;
+    Extra_multipale_media_2: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -890,6 +926,18 @@ export interface ApiPostPost extends Schema.CollectionType {
     >;
     tags: Attribute.Relation<'api::post.post', 'oneToMany', 'api::tag.tag'>;
     Markdown: Attribute.RichText;
+    Extra_text_1: Attribute.String;
+    Extra_text_2: Attribute.String;
+    Extra_text_3: Attribute.String;
+    Extra_text_4: Attribute.String;
+    Extra_long_text_1: Attribute.Text;
+    Extra_long_text_2: Attribute.Text;
+    Extra_long_text_3: Attribute.Text;
+    Extra_long_text_4: Attribute.Text;
+    Extra_singel_media_1: Attribute.Media;
+    Extra_singel_media_2: Attribute.Media;
+    Extra_multipale_media_1: Attribute.Media;
+    Extra_multipale_media_2: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -960,6 +1008,20 @@ export interface ApiProjectProject extends Schema.CollectionType {
       'oneToMany',
       'api::tag.tag'
     >;
+    Extra_text_1: Attribute.String;
+    Extra_text_2: Attribute.String;
+    Extra_text_3: Attribute.String;
+    Extra_text_4: Attribute.String;
+    Extra_text_5: Attribute.String;
+    Extra_long_text_1: Attribute.Text;
+    Extra_long_text_2: Attribute.Text;
+    Extra_long_text_3: Attribute.Text;
+    Extra_long_text_4: Attribute.Text;
+    Extra_long_text_5: Attribute.Text;
+    Extra_singel_media_1: Attribute.Media;
+    Extra_singel_media_2: Attribute.Media;
+    Extra_multipale_media_1: Attribute.Media;
+    Extra_multipale_media_2: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1001,6 +1063,10 @@ export interface ApiShopShop extends Schema.CollectionType {
     Shop_opening_hours_saturday: Attribute.String;
     Shop_closing_hours_saturday: Attribute.String;
     brand: Attribute.Relation<'api::shop.shop', 'oneToOne', 'api::brand.brand'>;
+    Extra_multipale_media_1: Attribute.Media;
+    Extra_single_media_1: Attribute.Media;
+    Extra_text_1: Attribute.String;
+    Extra_long_text_1: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1028,7 +1094,7 @@ export interface ApiTabTab extends Schema.CollectionType {
     };
   };
   attributes: {
-    tab_name_type_a: Attribute.String &
+    Tab_name_type_a: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1036,48 +1102,174 @@ export interface ApiTabTab extends Schema.CollectionType {
       }>;
     Tab_subtitle_a: Attribute.String;
     Tab_description_a: Attribute.Text;
-    tab_image: Attribute.Media;
+    Tab_image: Attribute.Media;
     Tab_galery_a: Attribute.Media;
     Secondery_image_a: Attribute.Media;
-    tab_name_type_b: Attribute.String;
-    featured_title_1_b: Attribute.String;
-    featured_description_1_b: Attribute.Text;
-    featured_icon_2_2_b: Attribute.Media;
-    featured_title_2_b: Attribute.String;
-    featured_description_2_b: Attribute.Text;
-    featured_icon_3_b: Attribute.Media;
-    featured_title_3_b: Attribute.String;
-    featured_description_3_b: Attribute.Text;
+    Tab_name_type_b: Attribute.String;
+    Teatured_title_1_b: Attribute.String;
+    Featured_description_1_b: Attribute.Text;
+    Featured_icon_2_2_b: Attribute.Media;
+    Featured_title_2_b: Attribute.String;
+    Featured_description_2_b: Attribute.Text;
+    Featured_icon_3_b: Attribute.Media;
+    Featured_title_3_b: Attribute.String;
+    Featured_description_3_b: Attribute.Text;
     Tab_galery_b: Attribute.Media;
-    tab_name_c: Attribute.String;
+    Tab_name_c: Attribute.String;
     Tab_description_c: Attribute.String;
     Tab_main_image_c: Attribute.Media;
     Tab_secondery_image_c: Attribute.Media;
-    tab_type_d: Attribute.String;
+    Tab_type_d: Attribute.String;
     tab_name_d: Attribute.String;
-    tab_title_d: Attribute.String;
-    tab_title_bold_d: Attribute.String;
-    tab_subtitle_d: Attribute.String;
-    tab_description_d: Attribute.String;
-    featured_image_d: Attribute.Media;
-    featured_small_image_d: Attribute.Media;
-    tab_type_e: Attribute.String;
-    tab_name_e: Attribute.String;
-    tab_title_e: Attribute.String;
-    tab_title_bold_e: Attribute.String;
-    tab_subtitle_e: Attribute.String;
-    tab_bollet_1_e: Attribute.String;
-    tab_bollet_2_e: Attribute.String;
-    tab_bollet_3_e: Attribute.String;
-    tab_bollet_4_e: Attribute.String;
-    tab_bollet_5_e: Attribute.String;
-    tab_bollet_6_e: Attribute.String;
-    tab_bollet_7_e: Attribute.String;
-    tab_bollet_8_e: Attribute.String;
-    tab_bollet_9: Attribute.String;
-    featured_image_e: Attribute.Media;
+    Tab_title_d: Attribute.String;
+    Tab_title_bold_d: Attribute.String;
+    Tab_subtitle_d: Attribute.String;
+    Tab_description_d: Attribute.String;
+    Featured_image_d: Attribute.Media;
+    Featured_small_image_d: Attribute.Media;
+    Tab_type_e: Attribute.String;
+    Tab_name_e: Attribute.String;
+    Tab_title_e: Attribute.String;
+    Tab_title_bold_e: Attribute.String;
+    Tab_subtitle_e: Attribute.String;
+    Tab_bollet_1_e: Attribute.String;
+    Tab_bollet_2_e: Attribute.String;
+    Tab_bollet_3_e: Attribute.String;
+    Tab_bollet_4_e: Attribute.String;
+    Tab_bollet_5_e: Attribute.String;
+    Tab_bollet_6_e: Attribute.String;
+    Tab_bollet_7_e: Attribute.String;
+    Tab_bollet_8_e: Attribute.String;
+    Tab_bollet_9: Attribute.String;
+    Featured_image_e: Attribute.Media;
     brand: Attribute.Relation<'api::tab.tab', 'oneToOne', 'api::brand.brand'>;
     Tab_type: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_text_1: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_text_2: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_text_3: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_text_4: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_text_5: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_long_text_1: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_long_text_2: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_long_text_3: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_long_text_4: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_long_text_5: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_singel_media_1: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_singel_media_2: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_multipale_media_1: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Extra_multipale_media_2: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Tab_type_f: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Tab_name_f: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Tab_subtitle_f: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Tab_description_f: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Tab_single_main_image_f: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Tab_galery_f: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Secondery_image_f: Attribute.Media &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
