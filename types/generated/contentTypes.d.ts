@@ -834,6 +834,8 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Extra_singel_media_2: Attribute.Media;
     Extra_multipale_media_1: Attribute.Media;
     Extra_multipale_media_2: Attribute.Media;
+    Surrounding_title_regular: Attribute.String;
+    Surrounding_title_bold: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

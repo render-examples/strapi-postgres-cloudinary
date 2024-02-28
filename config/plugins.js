@@ -32,5 +32,8 @@ module.exports = ({ env }) => ({
         roles: ["strapi-super-admin"],
       },
     },
+    'drag-drop-content-types': {
+      enabled: true
+    },
 });
 
