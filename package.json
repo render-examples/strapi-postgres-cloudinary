@@ -18,6 +18,7 @@
     "@strapi/provider-upload-cloudinary": "^4.15.5",
     "@strapi/strapi": "4.15.5",
     "better-sqlite3": "^8.7.0",
+    "drag-drop-content-types": "^1.0.0",
     "pg": "^8.11.3",
     "pg-connection-string": "^2.6.2",
     "react": "^18.0.0",

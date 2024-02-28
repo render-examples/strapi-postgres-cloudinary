@@ -887,6 +887,10 @@ export interface ApiBuildingBuilding extends Schema.CollectionType {
     Extra_singel_media_2: Attribute.Media;
     Extra_multipale_media_1: Attribute.Media;
     Extra_multipale_media_2: Attribute.Media;
+    Progress_status_checked: Attribute.Media;
+    Progress_status_uncheck: Attribute.Media;
+    Progress_status_gray_line: Attribute.Media;
+    Progress_status_green_line: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

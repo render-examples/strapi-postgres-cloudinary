@@ -45,32 +45,64 @@
       "type": "string"
     },
     "Extra_singel_media_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Extra_singel_media_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Extra_multipale_media_1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Extra_multipale_media_2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Progress_status_checked": {
       "allowedTypes": [
         "images"
       ],
       "type": "media",
       "multiple": false
     },
-    "Extra_multipale_media_1": {
+    "Progress_status_uncheck": {
       "allowedTypes": [
         "images"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     },
-    "Extra_multipale_media_2": {
+    "Progress_status_gray_line": {
       "allowedTypes": [
         "images"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
+    },
+    "Progress_status_green_line": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
