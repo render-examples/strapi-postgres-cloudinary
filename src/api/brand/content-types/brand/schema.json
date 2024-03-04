@@ -208,50 +208,45 @@
       "type": "string"
     },
     "Map_background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Map_adress": {
       "type": "string"
     },
     "Map_title_vector": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Map_site_vector": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Contact_us_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Contact_us_title": {
       "type": "string"
     },
     "Contact_us_subtitle": {
       "type": "string"
-    },
-    "Countact_us_link": {
-      "type": "boolean"
-    },
-    "Contact_us_number": {
-      "type": "boolean"
-    },
-    "Countact_us_client_panel": {
-      "type": "boolean"
     }
   }
 }

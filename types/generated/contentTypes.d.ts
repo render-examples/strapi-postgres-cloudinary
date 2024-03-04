@@ -836,6 +836,17 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Extra_multipale_media_2: Attribute.Media;
     Surrounding_title_regular: Attribute.String;
     Surrounding_title_bold: Attribute.String;
+    building_type: Attribute.String;
+    Number_of_buildings: Attribute.String;
+    Number_of_floors: Attribute.String;
+    Property_type: Attribute.String;
+    Map_background: Attribute.Media;
+    Map_adress: Attribute.String;
+    Map_title_vector: Attribute.Media;
+    Map_site_vector: Attribute.Media;
+    Contact_us_image: Attribute.Media;
+    Contact_us_title: Attribute.String;
+    Contact_us_subtitle: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
