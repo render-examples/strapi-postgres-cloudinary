@@ -194,6 +194,64 @@
     },
     "Surrounding_title_bold": {
       "type": "string"
+    },
+    "building_type": {
+      "type": "string"
+    },
+    "Number_of_buildings": {
+      "type": "string"
+    },
+    "Number_of_floors": {
+      "type": "string"
+    },
+    "Property_type": {
+      "type": "string"
+    },
+    "Map_background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Map_adress": {
+      "type": "string"
+    },
+    "Map_title_vector": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Map_site_vector": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Contact_us_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Contact_us_title": {
+      "type": "string"
+    },
+    "Contact_us_subtitle": {
+      "type": "string"
+    },
+    "Countact_us_link": {
+      "type": "boolean"
+    },
+    "Contact_us_number": {
+      "type": "boolean"
+    },
+    "Countact_us_client_panel": {
+      "type": "boolean"
     }
   }
 }
