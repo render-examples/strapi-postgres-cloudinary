@@ -251,8 +251,12 @@
     "tags": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::tag.tag",
-      "mappedBy": "brand"
+      "target": "api::tag.tag"
+    },
+    "tabs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tab.tab"
     }
   }
 }

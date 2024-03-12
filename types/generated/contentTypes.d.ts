@@ -848,6 +848,7 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Contact_us_title: Attribute.String;
     Contact_us_subtitle: Attribute.String;
     tags: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tag.tag'>;
+    tabs: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tab.tab'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1413,7 +1414,6 @@ export interface ApiTagTag extends Schema.CollectionType {
       'manyToOne',
       'api::project.project'
     >;
-    brand: Attribute.Relation<'api::tag.tag', 'manyToOne', 'api::brand.brand'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
