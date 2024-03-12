@@ -144,8 +144,7 @@
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "Tab_type_e": {
