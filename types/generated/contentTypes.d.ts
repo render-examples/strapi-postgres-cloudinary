@@ -1275,12 +1275,6 @@ export interface ApiTabTab extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    Extra_multipale_media_2: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     Tab_type_f: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
