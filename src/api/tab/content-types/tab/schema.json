@@ -419,13 +419,11 @@
         }
       }
     },
-<<<<<<< HEAD
     "brand": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::brand.brand",
-      "inversedBy": "tabs"
-=======
+      "inversedBy": "tabs",
     "Tab_type_controler": {
       "pluginOptions": {
         "i18n": {
@@ -433,7 +431,6 @@
         }
       },
       "type": "string"
->>>>>>> feb0dbf7ab3a56ad6e337ccfc4bbcdbdfcef2f0e
     }
   }
-}
+}}

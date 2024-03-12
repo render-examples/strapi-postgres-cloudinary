@@ -1373,16 +1373,7 @@ export interface ApiTabTab extends Schema.CollectionType {
           localized: true;
         };
       }>;
-<<<<<<< HEAD
     brand: Attribute.Relation<'api::tab.tab', 'manyToOne', 'api::brand.brand'>;
-=======
-    Tab_type_controler: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
->>>>>>> feb0dbf7ab3a56ad6e337ccfc4bbcdbdfcef2f0e
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
