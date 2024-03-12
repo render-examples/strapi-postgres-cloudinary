@@ -1378,7 +1378,6 @@ export interface ApiTabTab extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    brand: Attribute.Relation<'api::tab.tab', 'oneToOne', 'api::brand.brand'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
