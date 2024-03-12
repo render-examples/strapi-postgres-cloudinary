@@ -205,11 +205,6 @@
         "images"
       ]
     },
-    "brand": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::brand.brand"
-    },
     "Tab_type": {
       "pluginOptions": {
         "i18n": {
@@ -407,6 +402,12 @@
           "localized": true
         }
       }
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "tabs"
     }
   }
 }

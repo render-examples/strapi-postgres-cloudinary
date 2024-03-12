@@ -848,6 +848,7 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     Contact_us_title: Attribute.String;
     Contact_us_subtitle: Attribute.String;
     tags: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tag.tag'>;
+    tabs: Attribute.Relation<'api::brand.brand', 'oneToMany', 'api::tab.tab'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1190,7 +1191,6 @@ export interface ApiTabTab extends Schema.CollectionType {
     Tab_bollet_8_e: Attribute.String;
     Tab_bollet_9: Attribute.String;
     Featured_image_e: Attribute.Media;
-    brand: Attribute.Relation<'api::tab.tab', 'oneToOne', 'api::brand.brand'>;
     Tab_type: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1317,6 +1317,7 @@ export interface ApiTabTab extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    brand: Attribute.Relation<'api::tab.tab', 'manyToOne', 'api::brand.brand'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
