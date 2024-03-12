@@ -92,11 +92,12 @@
       "type": "text"
     },
     "Tab_galery_b": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -120,11 +121,12 @@
       "type": "string"
     },
     "Tab_main_image_c": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -132,11 +134,12 @@
       }
     },
     "Tab_secondery_image_c": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -192,11 +195,12 @@
       "type": "string"
     },
     "Featured_image_d": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -204,14 +208,15 @@
       }
     },
     "Featured_small_image_d": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -331,11 +336,12 @@
       "type": "string"
     },
     "Featured_image_e": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -375,11 +381,12 @@
       "type": "string"
     },
     "Tab_single_main_image_f": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -387,11 +394,12 @@
       }
     },
     "Tab_galery_f": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -399,16 +407,30 @@
       }
     },
     "Secondery_image_f": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
+    },
+    "Tab_type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brand.brand"
     }
   }
 }
