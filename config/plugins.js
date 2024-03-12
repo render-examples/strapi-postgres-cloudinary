@@ -31,9 +31,5 @@ module.exports = ({ env }) => ({
         teamFilter: process.env.VERCEL_DEPLOY_PLUGIN_TEAM_FILTER,
         roles: ["strapi-super-admin"],
       },
-    },
-    'drag-drop-content-types': {
-      enabled: true
-    },
+    }
 });
-
