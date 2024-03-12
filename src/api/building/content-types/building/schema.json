@@ -1,0 +1,108 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buildings",
+  "info": {
+    "singularName": "building",
+    "pluralName": "buildings",
+    "displayName": "building",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Building_name": {
+      "type": "string"
+    },
+    "Building_status": {
+      "type": "string"
+    },
+    "SF_id": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brand.brand"
+    },
+    "apartments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::apartment.apartment",
+      "mappedBy": "building"
+    },
+    "Extra_text_1": {
+      "type": "string"
+    },
+    "Extra_text_2": {
+      "type": "string"
+    },
+    "Extra_long_text_1": {
+      "type": "text"
+    },
+    "Extra_long_text_2": {
+      "type": "string"
+    },
+    "Extra_singel_media_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Extra_singel_media_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Extra_multipale_media_1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Extra_multipale_media_2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Progress_status_checked": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Progress_status_uncheck": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Progress_status_gray_line": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Progress_status_green_line": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

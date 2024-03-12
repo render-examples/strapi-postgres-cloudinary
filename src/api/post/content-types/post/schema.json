@@ -1,0 +1,204 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Article_title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "category": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "post"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "posts"
+    },
+    "Publish_date": {
+      "type": "string"
+    },
+    "Publisher_avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Excerpt": {
+      "type": "string"
+    },
+    "Section_title": {
+      "type": "string"
+    },
+    "First_paragraph": {
+      "type": "text"
+    },
+    "section_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "section_image_content": {
+      "type": "string"
+    },
+    "section_image_alt": {
+      "type": "string"
+    },
+    "section_image_description": {
+      "type": "string"
+    },
+    "section_link_text": {
+      "type": "string"
+    },
+    "section_link_url": {
+      "type": "string"
+    },
+    "Section_title_2": {
+      "type": "string"
+    },
+    "First_paragraph_2": {
+      "type": "text"
+    },
+    "section_image_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "section_image_content_2": {
+      "type": "string"
+    },
+    "section_image_alt_2": {
+      "type": "string"
+    },
+    "section_image_description_2": {
+      "type": "string"
+    },
+    "section_link_text_2": {
+      "type": "string"
+    },
+    "section_link_url_2": {
+      "type": "string"
+    },
+    "Section_title_3": {
+      "type": "string"
+    },
+    "First_paragraph_3": {
+      "type": "text"
+    },
+    "section_image_3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "section_image_content_3": {
+      "type": "string"
+    },
+    "section_image_alt_3": {
+      "type": "string"
+    },
+    "section_image_description_3": {
+      "type": "string"
+    },
+    "section_link_text_3": {
+      "type": "string"
+    },
+    "section_link_url_3": {
+      "type": "string"
+    },
+    "Section_title_4": {
+      "type": "string"
+    },
+    "First_paragraph_4": {
+      "type": "text"
+    },
+    "section_image_4": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "section_image_content_4": {
+      "type": "string"
+    },
+    "section_image_alt_4": {
+      "type": "string"
+    },
+    "section_image_description_4": {
+      "type": "string"
+    },
+    "section_link_text_4": {
+      "type": "string"
+    },
+    "section_link_url_4": {
+      "type": "string"
+    },
+    "Section_title_5": {
+      "type": "string"
+    },
+    "First_paragraph_5": {
+      "type": "text"
+    },
+    "section_image_5": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "section_image_content_5": {
+      "type": "string"
+    },
+    "section_image_alt_5": {
+      "type": "string"
+    },
+    "section_image_description_5": {
+      "type": "string"
+    },
+    "section_link_text_5": {
+      "type": "string"
+    },
+    "section_link_url_5": {
+      "type": "string"
+    }
+  }
+}

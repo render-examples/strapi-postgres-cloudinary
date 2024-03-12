@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_componnents_zones",
+  "info": {
+    "displayName": "Zone"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "md": {
+      "type": "richtext"
+    }
+  }
+}
