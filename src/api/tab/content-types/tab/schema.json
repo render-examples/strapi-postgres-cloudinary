@@ -418,14 +418,6 @@
           "localized": true
         }
       }
-    },
-    "Tab_type": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
     }
   }
 }
