@@ -1137,18 +1137,8 @@ export interface ApiTabTab extends Schema.CollectionType {
   options: {
     draftAndPublish: true;
   };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
   attributes: {
-    Tab_name_type_a: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
+    Tab_name_type_a: Attribute.String;
     Tab_subtitle_a: Attribute.String;
     Tab_description_a: Attribute.Text;
     Tab_image: Attribute.Media;
@@ -1163,216 +1153,55 @@ export interface ApiTabTab extends Schema.CollectionType {
     Featured_icon_3_b: Attribute.Media;
     Featured_title_3_b: Attribute.String;
     Featured_description_3_b: Attribute.Text;
-    Tab_galery_b: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_name_c: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_description_c: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_main_image_c: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_secondery_image_c: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_type_d: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    tab_name_d: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_title_d: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_title_bold_d: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_subtitle_d: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_description_d: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Featured_image_d: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Featured_small_image_d: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_type_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_name_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_title_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_title_bold_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_subtitle_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_bollet_1_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_bollet_2_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_bollet_3_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_bollet_4_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_bollet_5_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_bollet_6_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_bollet_7_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_bollet_8_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_bollet_9_e: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Featured_image_e: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_type_f: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_name_f: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_subtitle_f: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_description_f: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_single_main_image_f: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Tab_galery_f: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Secondery_image_f: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
+    Tab_galery_b: Attribute.Media;
+    Tab_name_c: Attribute.String;
+    Tab_description_c: Attribute.String;
+    Tab_main_image_c: Attribute.Media;
+    Tab_secondery_image_c: Attribute.Media;
+    Tab_type_d: Attribute.String;
+    tab_name_d: Attribute.String;
+    Tab_title_d: Attribute.String;
+    Tab_title_bold_d: Attribute.String;
+    Tab_subtitle_d: Attribute.String;
+    Tab_description_d: Attribute.String;
+    Featured_image_d: Attribute.Media;
+    Featured_small_image_d: Attribute.Media;
+    Tab_type_e: Attribute.String;
+    Tab_name_e: Attribute.String;
+    Tab_title_e: Attribute.String;
+    Tab_title_bold_e: Attribute.String;
+    Tab_subtitle_e: Attribute.String;
+    Tab_bollet_1_e: Attribute.String;
+    Tab_bollet_2_e: Attribute.String;
+    Tab_bollet_3_e: Attribute.String;
+    Tab_bollet_4_e: Attribute.String;
+    Tab_bollet_5_e: Attribute.String;
+    Tab_bollet_6_e: Attribute.String;
+    Tab_bollet_7_e: Attribute.String;
+    Tab_bollet_8_e: Attribute.String;
+    Tab_bollet_9: Attribute.String;
+    Featured_image_e: Attribute.Media;
+    Tab_type: Attribute.String;
+    Extra_text_1: Attribute.String;
+    Extra_text_2: Attribute.String;
+    Extra_text_3: Attribute.String;
+    Extra_text_4: Attribute.String;
+    Extra_text_5: Attribute.String;
+    Extra_long_text_1: Attribute.Text;
+    Extra_long_text_2: Attribute.Text;
+    Extra_long_text_3: Attribute.Text;
+    Extra_long_text_4: Attribute.Text;
+    Extra_long_text_5: Attribute.Text;
+    Extra_singel_media_1: Attribute.Media;
+    Extra_singel_media_2: Attribute.Media;
+    Extra_multipale_media_1: Attribute.Media;
+    Tab_type_f: Attribute.String;
+    Tab_name_f: Attribute.String;
+    Tab_subtitle_f: Attribute.String;
+    Tab_description_f: Attribute.Text;
+    Tab_single_main_image_f: Attribute.Media;
+    Tab_galery_f: Attribute.Media;
+    Secondery_image_f: Attribute.Media;
     brand: Attribute.Relation<'api::tab.tab', 'manyToOne', 'api::brand.brand'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1381,12 +1210,6 @@ export interface ApiTabTab extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<'api::tab.tab', 'oneToOne', 'admin::user'> &
       Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::tab.tab',
-      'oneToMany',
-      'api::tab.tab'
-    >;
-    locale: Attribute.String;
   };
 }
 
