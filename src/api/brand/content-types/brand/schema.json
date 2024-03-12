@@ -247,6 +247,12 @@
     },
     "Contact_us_subtitle": {
       "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "brand"
     }
   }
 }

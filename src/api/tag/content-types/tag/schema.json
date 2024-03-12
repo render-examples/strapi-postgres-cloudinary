@@ -28,6 +28,12 @@
       "relation": "manyToOne",
       "target": "api::project.project",
       "inversedBy": "tags"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "tags"
     }
   }
 }
