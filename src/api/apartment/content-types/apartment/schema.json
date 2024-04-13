@@ -1,0 +1,128 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apartments",
+  "info": {
+    "singularName": "apartment",
+    "pluralName": "apartments",
+    "displayName": "Apartment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Description_c": {
+      "type": "text"
+    },
+    "Number_of_Rooms__c": {
+      "type": "string"
+    },
+    "Apartment_image_galerry": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Model_Code_Label__c": {
+      "type": "string"
+    },
+    "sketch_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Apartment_type__c": {
+      "type": "string"
+    },
+    "Floor_numbers": {
+      "type": "string"
+    },
+    "Total_Balcony_Sqm__c": {
+      "type": "string"
+    },
+    "Apartment_sqm_c": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brand.brand"
+    },
+    "building": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::building.building",
+      "inversedBy": "apartments"
+    },
+    "Main_title": {
+      "type": "string"
+    },
+    "Main_bold_title": {
+      "type": "string"
+    },
+    "Extra_text_1": {
+      "type": "string"
+    },
+    "Extra_text_2": {
+      "type": "string"
+    },
+    "Extra_text_3": {
+      "type": "string"
+    },
+    "Extra_text_4": {
+      "type": "string"
+    },
+    "Extra_text_5": {
+      "type": "string"
+    },
+    "Extra_long_text_1": {
+      "type": "text"
+    },
+    "Extra_long_text_2": {
+      "type": "string"
+    },
+    "Extra_long_text_3": {
+      "type": "text"
+    },
+    "Extra_long_text_4": {
+      "type": "text"
+    },
+    "Extra_long_text_5": {
+      "type": "text"
+    },
+    "Extra_singel_media_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Extra_singel_media_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Extra_multipale_media_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Extra_multipale_media_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Brand_name": {
+      "type": "string"
+    },
+    "Brand_Slogan": {
+      "type": "string"
+    },
+    "City__c": {
+      "type": "string"
+    },
+    "Brand_Type": {
+      "type": "string"
+    },
+    "Hero_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "project_status": {
+      "type": "string"
+    },
+    "Main_title": {
+      "type": "string"
+    },
+    "Main_description": {
+      "type": "text"
+    },
+    "Main_featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Secondary_featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Main_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "buildings": {
+      "type": "string"
+    },
+    "floors": {
+      "type": "string"
+    },
+    "Apartments": {
+      "type": "string"
+    },
+    "rooms": {
+      "type": "string"
+    },
+    "tab_name_a": {
+      "type": "string"
+    },
+    "Tab_subtitle_a": {
+      "type": "string"
+    },
+    "Tab_description_a": {
+      "type": "text"
+    },
+    "Tab_single_main_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Tab_galery_a": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Secondery_image_a": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Tab_name_b": {
+      "type": "string"
+    },
+    "featured_icon_1_b": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "featured_title_1_b": {
+      "type": "string"
+    },
+    "featured_description_1_b": {
+      "type": "text"
+    },
+    "featured_icon_2_b": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "featured_title_2_b": {
+      "type": "string"
+    },
+    "featured_description_2_b": {
+      "type": "text"
+    },
+    "featured_icon_3_b": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "featured_title_3_b": {
+      "type": "string"
+    },
+    "featured_description_3_b": {
+      "type": "text"
+    },
+    "Tab_galery_b": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tab_name_c": {
+      "type": "string"
+    },
+    "Tab_description_c": {
+      "type": "text"
+    },
+    "Tab_main_image_c": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Tab_secondery_image_c": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Surrounding_description": {
+      "type": "text"
+    },
+    "Surrounding_image_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Surrounding_title_1": {
+      "type": "string"
+    },
+    "Surrounding_image_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Surrounding_title_2": {
+      "type": "string"
+    },
+    "Surrounding_image_3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Surrounding_title_3": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "project"
+    },
+    "Extra_text_1": {
+      "type": "string"
+    },
+    "Extra_text_2": {
+      "type": "string"
+    },
+    "Extra_text_3": {
+      "type": "string"
+    },
+    "Extra_text_4": {
+      "type": "string"
+    },
+    "Extra_text_5": {
+      "type": "string"
+    },
+    "Extra_long_text_1": {
+      "type": "text"
+    },
+    "Extra_long_text_2": {
+      "type": "text"
+    },
+    "Extra_long_text_3": {
+      "type": "text"
+    },
+    "Extra_long_text_4": {
+      "type": "text"
+    },
+    "Extra_long_text_5": {
+      "type": "text"
+    },
+    "Extra_singel_media_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Extra_singel_media_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Extra_multipale_media_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Extra_multipale_media_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
