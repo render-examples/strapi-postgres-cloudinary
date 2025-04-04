@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_componnents_post_contents",
+  "info": {
+    "displayName": "Post_Content",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Section_title": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "First_paragraph": {
+      "type": "text",
+      "required": false
+    },
+    "section_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "section_link_text": {
+      "type": "richtext"
+    }
+  }
+}

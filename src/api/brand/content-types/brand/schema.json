@@ -1,0 +1,264 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "singularName": "brand",
+    "pluralName": "brands",
+    "displayName": "brand",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Brand_name": {
+      "type": "string"
+    },
+    "Brand_Slogan": {
+      "type": "string"
+    },
+    "City_c": {
+      "type": "string"
+    },
+    "Brand_Type": {
+      "type": "string"
+    },
+    "Hero_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "project_status": {
+      "type": "string"
+    },
+    "Main_title": {
+      "type": "string"
+    },
+    "Main_description": {
+      "type": "text"
+    },
+    "Main_featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Secondary_featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Main_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Surrounding_description": {
+      "type": "text"
+    },
+    "Surrounding_image_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Surrounding_title_1": {
+      "type": "string"
+    },
+    "Surrounding_image_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Surrounding_title_2": {
+      "type": "string"
+    },
+    "Surrounding_image_3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Surrounding_title_3": {
+      "type": "string"
+    },
+    "Street__c": {
+      "type": "string"
+    },
+    "Sidebar_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Main_title_bold": {
+      "type": "string"
+    },
+    "rooms": {
+      "type": "string"
+    },
+    "Apartment_section_title": {
+      "type": "string"
+    },
+    "Apartment_section_title_bold": {
+      "type": "string"
+    },
+    "Apartment_section_description": {
+      "type": "text"
+    },
+    "Extra_text_1": {
+      "type": "string"
+    },
+    "Extra_text_2": {
+      "type": "string"
+    },
+    "Extra_text_3": {
+      "type": "string"
+    },
+    "Extra_text_4": {
+      "type": "string"
+    },
+    "Extra_text_5": {
+      "type": "string"
+    },
+    "Extra_long_text_1": {
+      "type": "text"
+    },
+    "Extra_long_text_2": {
+      "type": "text"
+    },
+    "Extra_long_text_3": {
+      "type": "text"
+    },
+    "Extra_long_text_4": {
+      "type": "text"
+    },
+    "Extra_long_text_5": {
+      "type": "text"
+    },
+    "Extra_singel_media_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Extra_singel_media_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Extra_multipale_media_1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Extra_multipale_media_2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Surrounding_title_regular": {
+      "type": "string"
+    },
+    "Surrounding_title_bold": {
+      "type": "string"
+    },
+    "building_type": {
+      "type": "string"
+    },
+    "Number_of_buildings": {
+      "type": "string"
+    },
+    "Number_of_floors": {
+      "type": "string"
+    },
+    "Property_type": {
+      "type": "string"
+    },
+    "Map_background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Map_adress": {
+      "type": "string"
+    },
+    "Map_title_vector": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Map_site_vector": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Contact_us_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Contact_us_title": {
+      "type": "string"
+    },
+    "Contact_us_subtitle": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "brand"
+    },
+    "tabs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tab.tab",
+      "mappedBy": "brand"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_componnents_comp1s",
+  "info": {
+    "displayName": "comp1",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "markdown": {
+      "type": "richtext"
+    }
+  }
+}
